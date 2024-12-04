@@ -1,0 +1,41 @@
+@import '@/styles/override';
+
+.CardCvvInput {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-top: none;
+  border-left: none;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.5rem;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 1px 1px $fn-green;
+  }
+}
+
+.cardIconContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.errorMessage {
+  color: $orange;
+  font-size: 0.75rem;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 0;
+}

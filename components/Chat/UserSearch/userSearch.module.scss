@@ -1,0 +1,43 @@
+@import '@/styles/override';
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  padding: inherit;
+  padding-left: 10px;
+  height: 100%;
+
+  input {
+    flex-grow: 1;
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: $font16;
+    font-weight: 500;
+    padding: 16px 20px;
+    height: 80%;
+    border: none;
+    outline: none;
+    background-color: $bg-alice-blue;
+  }
+
+  &.asPopup {
+    background-color: $bg-alice-blue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+}
+
+.btn {
+  all: unset;
+  color: $gray;
+  font-size: $small;
+
+  &.close {
+    font-size: $base;
+    &:hover {
+      color: $gray-darkest;
+    }
+  }
+}

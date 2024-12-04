@@ -1,0 +1,75 @@
+@import '@/styles/override';
+
+.container {
+  position: relative;
+  input {
+    &::placeholder {
+      font-size: $font14;
+    }
+  }
+
+  & > div {
+    border-radius: 8px 8px 0 0;
+    border: 1px solid $container-border-opacity;
+    border-bottom: 0;
+  }
+
+  .gridMobile {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    width: 100%;
+    max-width: 100% !important;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+  .gridDesktop {
+    display: flex;
+  }
+
+  .facets {
+    min-height: 42px;
+    position: relative;
+    border: 1px solid $container-border-opacity;
+    border-top: 0;
+    border-radius: 0 0 8px 8px;
+    background-color: $white;
+    row-gap: 10px;
+    justify-content: space-between;
+
+    .dropdowns {
+      gap: 10px;
+      max-width: calc(100% - 115px);
+
+      & > div {
+        span {
+          &:first-child {
+            font-size: $font14;
+            color: $fn-secondary-color;
+          }
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 95%;
+      background-color: $container-border-opacity;
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .buttonMobile {
+    width: 100%;
+    text-align: right;
+    margin: 0 10px 10px 0;
+  }
+
+  .buttonDesktop {
+    margin-right: 17px;
+  }
+}

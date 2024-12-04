@@ -1,0 +1,30 @@
+@import '@/styles/override';
+
+.tagContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto 10px;
+  background-color: $bg-color;
+  border: 1px solid $gray-90;
+}
+
+.msg {
+  font-size: $font18;
+  text-align: center;
+  margin: 5px 0 10px;
+}
+
+.reasonInput {
+  background-color: $white;
+  outline: none;
+  border: 1px solid $gray-lighter;
+  padding: 4px 8px;
+  font-size: $font14;
+  width: 80%;
+  margin: 5px 0;
+  border-radius: 3px;
+  color: $fn-primary-color;
+}

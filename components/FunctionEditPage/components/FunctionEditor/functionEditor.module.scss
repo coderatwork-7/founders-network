@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.tinyMceEditor {
+  :global {
+    .tox-tinymce {
+      border: 1px solid $gray-lighter;
+      border-radius: 4px;
+    }
+
+    .tox-toolbar__primary {
+      background-image: none !important;
+    }
+
+    .mce-content-body {
+      @media (max-width: $grid-breakpoint-sm) {
+        font-size: $xsmall;
+      }
+    }
+  }
+}
+
+.hideEditor {
+  height: 0;
+  visibility: hidden;
+}
+
+.editorPlaceholder {
+  height: 420px;
+  display: flex;
+  font-size: $base;
+  align-items: center;
+  justify-content: center;
+}

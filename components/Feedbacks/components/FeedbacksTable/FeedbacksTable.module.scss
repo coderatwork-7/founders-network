@@ -1,0 +1,106 @@
+@import '@/styles/override';
+
+.tableDiv {
+  margin: auto;
+  overflow: auto;
+  max-width: 100%;
+  width: fit-content;
+  border: 1px solid $gray-90;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  table {
+    margin: auto;
+    border-spacing: 0;
+    position: relative;
+    table-layout: fixed;
+    border-collapse: separate;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .tooltip {
+    overflow-y: auto;
+    max-height: 200px;
+    font-size: $small;
+    padding: 6px 8px 8px;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 11px;
+      height: 11px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: none;
+      border-radius: 10px;
+      background-color: $gray-middle;
+    }
+  }
+
+  .tooltipContainer {
+    margin: auto;
+    width: min-content;
+    padding: 10px 10px;
+  }
+
+  .tooltipPopover {
+    max-width: min(400px, 80%);
+  }
+
+  thead {
+    top: 0;
+    color: $gray;
+    z-index: 1;
+    position: sticky;
+    font-size: $small;
+    text-align: center;
+    letter-spacing: 0.8px;
+    border-top: 5px solid $black;
+    background-color: $gray-less-lightest;
+
+    tr {
+      th {
+        white-space: nowrap;
+        padding: 12px 10px 12px;
+        border-bottom: 1px solid $gray-90;
+      }
+    }
+  }
+
+  tr {
+    border: 1px solid $gray-90;
+
+    td:first-of-type {
+      padding-left: 10px;
+    }
+
+    td:last-of-type {
+      padding-right: 10px;
+    }
+
+    td {
+      padding: 5px 0;
+      white-space: nowrap;
+      border-bottom: 1px solid $gray-90;
+
+      .comment {
+        margin: auto;
+        max-width: 350px;
+        width: max-content;
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.starIcon {
+  margin-left: 4px;
+  color: $fn-golden-tainoi;
+}

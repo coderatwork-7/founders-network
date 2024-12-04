@@ -1,0 +1,52 @@
+@import '@/styles/override';
+.container {
+  border: 1px solid $container-border-opacity;
+  padding: 8px 0;
+  border-radius: 8px;
+  .heading {
+    font-size: $large;
+    padding: 5px 0;
+    .crossBtn {
+      padding: 0;
+      margin-right: 5px;
+    }
+  }
+  .objective {
+    & > div:nth-child(2):not(.ignoreNoPadding) {
+      padding: 0 !important;
+      border: none;
+    }
+    padding: 10px 0;
+    margin-bottom: 12px;
+    background-color: $white;
+    overflow: hidden;
+  }
+  .error {
+    color: $red;
+  }
+  .smallText {
+    font-size: $small;
+  }
+  .input {
+    &,
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
+  .buttonContainer {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    .button {
+      margin-left: auto;
+      margin-right: 10px;
+      cursor: pointer;
+      font-size: $large;
+      color: $fn-grayish-blue;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '@/styles/override';
+
+.popupContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  padding: 0 10px;
+  gap: 20px;
+  z-index: 100;
+  overflow: visible;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.fadeEnter {
+  flex: 0 0 0;
+}
+
+.fadeEnterActive {
+  flex: 0 0 auto;
+}
+
+.fadeExit {
+  flex: 0 0 auto;
+}
+
+.fadeExitActive {
+  flex: 0 0 0;
+}

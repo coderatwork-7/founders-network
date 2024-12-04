@@ -1,0 +1,35 @@
+@import '@/styles/override';
+
+.ProfileHeaderCard {
+  text-align: start;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.nameSocialRow {
+  display: flex;
+  gap: 2rem;
+}
+
+.about {
+}
+
+.membershipInfo {
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.avatarContainer {
+  margin-top: -7.5rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+}

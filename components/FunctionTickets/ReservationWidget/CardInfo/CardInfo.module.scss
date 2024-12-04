@@ -1,0 +1,145 @@
+@import '@/styles/override';
+
+.cardInfo {
+  margin: 20px 5% 5px;
+  font-size: $font14;
+  background-color: $bg-color;
+  border: 1px solid $gray-90;
+  min-height: 150px;
+}
+
+.editDetails {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+
+  .input {
+    border: 0;
+    outline: 1px solid $gray-lighter;
+    flex-grow: 1;
+    color: $fn-primary-color;
+    width: 100%;
+    padding-left: 8px;
+
+    &.err {
+      outline: 1px solid $red;
+    }
+  }
+
+  @media (max-width: $grid-breakpoint-sm) {
+    gap: 10px;
+
+    .expiryField {
+      flex-grow: 1;
+      margin-left: 10%;
+    }
+
+    .cvv {
+      width: 50px;
+      flex-shrink: 1;
+    }
+  }
+}
+
+.cardField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  letter-spacing: 0.8px;
+  color: $fn-secondary-color;
+
+  &:first-of-type {
+    flex-grow: 1;
+
+    @media (max-width: $grid-breakpoint-sm) {
+      width: 100%;
+    }
+  }
+}
+
+.nameContainer {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.nameInput {
+  label {
+    margin-bottom: 4px;
+  }
+  input {
+    height: 28px;
+  }
+  color: $fn-secondary-color;
+}
+
+.cardNumberSpecial {
+  width: 40%;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardNumberSpecial {
+    width: 100%;
+  }
+
+  .nameContainer {
+    flex-direction: column;
+    gap: 10px;
+    .nameInput {
+      width: 100%;
+    }
+  }
+}
+
+.expiryField {
+  width: 35%;
+}
+
+.cvv {
+  width: 80px;
+}
+
+.expiry {
+  display: flex;
+  gap: 10px;
+}
+
+.helpText {
+  margin: 10px 0;
+  text-align: center;
+  color: $black;
+  letter-spacing: 0.5px;
+}
+
+.cardDetails {
+  padding: 0 20px 20px;
+  letter-spacing: 0.8px;
+  color: $gray;
+  line-height: 25px;
+
+  b {
+    letter-spacing: 1px;
+    margin-left: 2px;
+    color: $black;
+    font-weight: normal;
+  }
+}
+
+.editBtn {
+  all: unset;
+  color: $blue-light;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin: 15px 20px 10px;
+
+  .btn {
+    font-size: $font12;
+    padding: 4px 10px;
+  }
+}

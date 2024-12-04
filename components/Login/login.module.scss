@@ -1,0 +1,59 @@
+@import '@/styles/override';
+
+.loginContainer {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  @media (min-width: $grid-breakpoint-lg) {
+    margin: 3% auto 0 auto;
+  }
+  &.mobileLoginContainer {
+    width: 100%;
+    height: 100%;
+    margin: 5% auto 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    min-height: 465px;
+    img {
+      margin-top: 30px;
+    }
+    form {
+      width: 90%;
+    }
+    .errorMessage {
+      height: 50px;
+    }
+  }
+  form {
+    margin: 0 auto 0 auto;
+    width: 460px;
+  }
+  .inputContainer {
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  button {
+    width: 100%;
+    height: 49px;
+    border-radius: 3px;
+  }
+  .forgotPassword {
+    text-decoration: none;
+    font-size: $font14;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .errorMessage {
+    color: $danger;
+    font-weight: 100;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    margin: 0;
+    font-size: $font14;
+  }
+}

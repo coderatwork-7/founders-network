@@ -1,0 +1,1 @@
+export {SponsoredMember} from './sponsoredMember';

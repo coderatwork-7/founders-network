@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.searchContainer {
+  height: 50px;
+  max-height: 50px;
+  z-index: -1;
+  border-bottom: 1px solid rgba($color: $fn-secondary-color, $alpha: 0.3);
+  display: flex;
+  align-items: center;
+  opacity: 1;
+
+  .searchBar {
+    border: 1px solid $gray-90;
+    margin: 6px 14px;
+
+    input {
+      padding: 8px 0px;
+      font-size: $small;
+      letter-spacing: 0.4px;
+    }
+
+    &:focus-within {
+      border: 1px solid $green;
+    }
+  }
+
+  transition: all 0.1s linear;
+
+  &.hidden {
+    opacity: 0;
+    max-height: 0;
+  }
+}

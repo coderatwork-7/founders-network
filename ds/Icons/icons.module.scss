@@ -1,0 +1,47 @@
+@import '@/styles/override';
+.icon,
+.addToCalendar,
+.count,
+.ellipsis {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.icon {
+  color: $fn-regent-st-blue;
+  width: 25px;
+  height: 20px;
+
+  &.iconLarge {
+    width: 35px;
+    height: 30px;
+  }
+}
+.popover {
+  padding: 10px 5px;
+  box-shadow: 0 0 4px $gray-lightest-special;
+}
+.popover div {
+  padding: 2px 5px;
+  line-height: 16px;
+}
+.popover div a {
+  color: $blue;
+}
+.verticalEllipsis,
+.addToCalendar,
+.ellipsis {
+  color: $gray-darker;
+}
+.cursorDefault {
+  cursor: default !important;
+}
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .addToCalendar {
+    width: 20px;
+    height: 15px;
+  }
+}

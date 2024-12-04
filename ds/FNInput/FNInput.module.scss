@@ -1,0 +1,79 @@
+@import '@/styles/override';
+.FNInput {
+  width: 100%;
+  outline: none;
+  label {
+    color: --bs-gray-500;
+  }
+}
+
+.input {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  width: 100%;
+  padding: 0.5rem;
+
+  &:focus {
+    //   outline: 1px solid $fn-green;
+    outline: none;
+    box-shadow: inset 0px 0px 1px 1px $fn-green;
+  }
+}
+
+.topLeft {
+  border-top-left-radius: 0.5rem;
+}
+
+.topRight {
+  border-top-right-radius: 0.5rem;
+}
+
+.bottomLeft {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.bottomRight {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.borderNoneTop {
+  border-top: none;
+}
+
+.borderNoneBottom {
+  border-bottom: none;
+}
+
+.borderNoneLeft {
+  border-left: none;
+}
+
+.borderNoneRight {
+  border-right: none;
+}
+
+.error {
+  box-shadow: inset 0px 0px 1px 1px $orange;
+}
+
+.errorMessage {
+  color: $orange;
+  font-size: 0.75rem;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 0;
+}
+
+.required {
+  margin-left: 0.25rem;
+  color: $red;
+  font-weight: bold;
+}
+
+.description {
+  color: $gray-dim;
+  font-size: 0.9rem;
+}
+
+.passwordContainer {
+  display: flex;
+  gap: 1rem;
+}

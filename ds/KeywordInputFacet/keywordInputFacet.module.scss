@@ -1,0 +1,62 @@
+@import '@/styles/override';
+
+.wrapper {
+  border: 1px solid $gray-lighter;
+  color: $secondary;
+  background-color: $white;
+  border-radius: 5px;
+
+  .keyword {
+    background-color: $gray-light;
+    font-size: $small;
+    .crossBtn {
+      height: 3px;
+      width: 3px;
+      padding: 4px;
+    }
+  }
+
+  .keyword button {
+    cursor: pointer;
+    color: $primary;
+  }
+
+  .input {
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: $white;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    border: 1px solid $primary-lightest;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    list-style: none;
+    min-width: 10rem;
+    max-width: 15rem;
+    background-color: $white;
+    z-index: 20;
+    overflow-y: auto;
+    max-height: 250px;
+    &.mobile {
+      max-width: 10rem;
+    }
+
+    li {
+      padding: 2px 8px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background-color: $primary-lightest;
+    }
+  }
+}
+.disabled {
+  color: $gray-lighter;
+}

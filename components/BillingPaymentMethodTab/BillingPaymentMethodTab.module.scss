@@ -1,0 +1,23 @@
+@import '@/styles/override';
+
+.BillingPaymentMethodTab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  // align-items: center;
+
+  // & > * {
+  //   border-bottom: 1px solid $gray-less-darker;
+  // }
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: flex-end;
+  a {
+    display: flex;
+    gap: 1rem;
+  }
+}

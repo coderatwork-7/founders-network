@@ -1,0 +1,176 @@
+@import '@/styles/override';
+
+.nominateInvite {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  flex: 4;
+}
+
+.heading {
+  text-align: center;
+}
+
+.cardContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.nominateCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.nominateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.nominationSubmitted {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.successName {
+  color: $cd-border-brown;
+}
+
+.warning {
+  color: $warning;
+}
+
+.submitButton {
+  align-self: flex-end;
+}
+
+.inputHeader {
+  font-size: $xsmall;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  font-size: $small;
+  border: 1px solid;
+  outline: none;
+}
+
+.inputElement {
+  flex: 0 1 25%;
+  margin-right: 15px;
+}
+
+.inputElementHeader {
+  flex-basis: 40%;
+}
+
+.inputTextArea {
+  width: 100%;
+  min-height: 65px;
+  font-size: $xsmall;
+  padding: 10px 10px 0 15px;
+  resize: horizontal;
+  min-width: 100px;
+  outline: none;
+  max-width: 360px;
+  border: 1px solid;
+}
+
+.iconContainer {
+  margin-top: 20px;
+  position: absolute;
+  right: -10%;
+  top: 0;
+  transform: translate(-5px, 0);
+  width: 70px;
+  height: 70px;
+  img {
+    cursor: pointer;
+  }
+}
+
+.addButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-5px, 50%);
+  img {
+    cursor: pointer;
+  }
+}
+
+.spinner {
+  height: 20px;
+  width: 20px;
+  vertical-align: baseline;
+  margin-right: 6px;
+}
+
+.inputError {
+  border: 1px solid $warning;
+  outline: 1px solid $warning;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    padding: 20px;
+  }
+
+  .inputElement {
+    margin-left: 2px;
+    margin-right: 0;
+  }
+
+  .inputTextArea {
+    margin-left: 2px;
+  }
+
+  .iconContainer {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .formContainer {
+    border-bottom: 1px solid $gray;
+    margin-bottom: 20px;
+  }
+
+  .addButton {
+    position: static;
+    transform: translate(0, 0);
+    margin-bottom: 20px;
+  }
+
+  .errorMessage {
+    transform: translate(0, 0);
+  }
+}
+
+.onboarding {
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+}
+
+.formRow {
+  display: flex;
+}
+
+.afterNominationMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

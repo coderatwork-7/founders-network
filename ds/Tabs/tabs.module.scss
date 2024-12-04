@@ -1,0 +1,15 @@
+@import '@/styles/override';
+.container {
+  height: 30px;
+  border-bottom: 2px solid $container-border-opacity;
+}
+.label {
+  height: 100%;
+  transform: translateY(2px);
+}
+.selected.selected.selected {
+  border-bottom: 2px solid $fn-standard-green;
+}
+.label:hover {
+  border-bottom: 2px solid rgb($fn-standard-green, 0.2);
+}

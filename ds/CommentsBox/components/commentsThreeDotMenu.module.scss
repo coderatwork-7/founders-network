@@ -1,0 +1,14 @@
+@import '@/styles/colors';
+.container {
+  border-radius: 4px; //special case
+  width: 175px;
+  & > div {
+    &:last-child {
+      border-bottom: 1px solid $gray-lighter;
+    }
+    &:hover {
+      background-color: $gray-lighter;
+    }
+    padding: 5px 10px;
+  }
+}

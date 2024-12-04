@@ -1,0 +1,48 @@
+@import '@/styles/override';
+
+.content {
+  font-size: $base;
+  overflow-x: auto;
+
+  &.expanded {
+    font-size: $large;
+  }
+}
+
+.wrapper {
+  background-color: $snow;
+  border-radius: 8px;
+
+  .input {
+    width: 100%;
+    border: 1px solid $gray-90;
+    border-radius: 4px;
+    color: $fn-third-color;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .noComment {
+    color: $fn-third-color;
+  }
+
+  .attachment {
+    background-color: $light-grayish-blue;
+    border: 1px solid $gray-more-light;
+    border-radius: 4px;
+  }
+
+  .editorContainer {
+    width: 100%;
+    min-height: 140px;
+  }
+
+  :global {
+    .tox.tox-tinymce {
+      min-height: 140px;
+      height: 100% !important;
+    }
+  }
+}

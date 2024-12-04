@@ -1,0 +1,51 @@
+@import '@/styles/override';
+
+.cardContainer {
+  padding: 40px 80px;
+  text-align: left;
+}
+
+.sponsorHeader {
+  font-size: $heading3;
+}
+
+.profileName {
+  font-size: $basebold;
+}
+
+.messageButton {
+  width: 170px;
+}
+
+.sponsoredContainer {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.noSponsoredMember {
+  font-size: $large;
+}
+
+.nominateLink {
+  color: $blue;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    padding: 20px;
+  }
+
+  .sponsoredContainer {
+    padding-bottom: 20px;
+  }
+
+  .sponsorHeader {
+    font-size: $heading6;
+  }
+
+  .messageButton {
+    width: 100%;
+  }
+}

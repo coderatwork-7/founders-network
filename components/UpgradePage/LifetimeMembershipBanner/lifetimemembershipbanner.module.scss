@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.lifetimeContainer {
+  background-color: $bg-dark-teal;
+  color: $white;
+  height: 50px;
+  font-size: $base;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px $gray-lighter;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre;
+}

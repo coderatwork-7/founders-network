@@ -1,0 +1,31 @@
+@import '@/styles/override';
+
+.container {
+  text-align: center;
+  background-color: $white;
+  border-color: $container-border-opacity;
+  .info {
+    border-bottom: 1px solid $container-border-opacity;
+    padding: 1rem;
+
+    .label {
+      font-size: $font15;
+      font-weight: 400;
+      color: $fn-secondary-color;
+    }
+
+    .value {
+      font-size: $font24;
+      line-height: 24px;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .spinner {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "coverImageUrl": "https://fnprofileimages3.s3.amazonaws.com/production/files/3yvvrk4/Smartmoney-2-641.jpg",
+    "date": "Jan 24 - Jul 12",
+    "eventDate": "24/01/2024",
+    "price": "$5 - $10",
+    "title": "fnInvestor Session with Bill Reichert, Managing Director at Garage Technology Ventures",
+    "rating": 4.5
+  },
+  "reviews": {
+    "tweets": []
+  },
+  "details": {
+    "dateTime": {
+      "startDate": "2023-05-31T23:01:01.695977Z",
+      "startTimeET": "19:01:01 EDT",
+      "startTimePT": "12.45p.m",
+      "endTimePT": "1.45p.m",
+      "endDate": "2023-06-26T18:45:01.696030Z",
+      "endTimeET": "14:45:01 EDT",
+      "localTime": "09:49am - 10:49am (GMT+05:30)"
+    },
+    "location": {
+      "name": "The Library at The Vault",
+      "address": "415 Jackson Street, San Francisco, CA, United States"
+    },
+    "descritption": "<p>Dial in or come in-person to The Vault in San Francisco for an opportunity to chat with Bill Reichert, Managing Director at Garage Technology Ventures.&nbsp;</p>\r\n<div>Learn about Bill's investment thesis in his <a href=\"https://foundersnetwork.com/blog/2-components-startup-needs-secure-investment-bill-reichert-garage-technology-vc/\">interview with Founders Edge</a> (2 min. read).</div>\r\n<div><br />\r\n<div>\r\n<div><strong>Agenda:</strong></div>\r\n<div>\r\n<ul>\r\n<li>Intro (5 mins)</li>\r\n<li>Introduction of Featured Guest (10 mins)</li>\r\n<li>Moderated Q&amp;A with Founders (45 mins)</li>\r\n</ul>\r\n<div><strong>About Garage Technology Ventures</strong></div>\r\n</div>\r\n<div>Garage Technology Ventures is a seed and early stage venture capital firm based in Silicon Valley. Garage started as an accelerator and seed fund, launching in 1998. Garage was the first investor in Pandora, and has funded many successful startups since.</div>\r\n</div>\r\n</div>",
+    "zoomLink": "The Library at The Vault"
+  },
+  "featured": {
+    "guestDetails": [
+      {
+        "name": "Bill Reichert",
+        "avatarUrl": "https://res.cloudinary.com/foundersnetwork/image/upload/c_limit,f_jpg,h_400,r_4,w_400/g_south_east,l_fn_22_mw4cdy,r_0:0:4:0/v1/production/userprofile/ad7babd2e9c50b6d2b07f02ab3261552.jpg",
+        "profileId": 1777,
+        "userRole": "Investor",
+        "badge": "None",
+        "profileUrl": "/investor/1777",
+        "tags": ["Silicon Valley", "Investor"],
+        "shortDescription": "Entrepreneur, venture capitalist, mentor, author, speaker, board member, advisor, educator, partner, spouse, parent, and general enthusiast. Not always in that order. \r\n\r\nI love to work with great entrepreneurs to build great companies.\r\n\r\nSpecialties: Seed stage and early stage emerging technology companies across information technology, energy tech, materials science, edtech, and fintech, among other sectors. \r\n\r\nPhilosophy: Successful entrepreneurs focus on the disciplined growth and development of their value proposition, strategy, team, operations, finance, sales and marketing.",
+        "social": {
+          "twitterUrl": "https://twitter.com/billreichert",
+          "linkedinUrl": "https://www.linkedin.com/in/billreichert"
+        }
+      }
+    ]
+  }
+}

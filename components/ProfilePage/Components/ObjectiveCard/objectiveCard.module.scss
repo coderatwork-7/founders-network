@@ -1,0 +1,96 @@
+@import '@/styles/override';
+
+.objectiveCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .contentContainer {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+
+    .tagsContainer {
+      display: flex;
+
+      .tagsCard {
+        background: $blue-lightest;
+
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+          overflow-y: auto;
+
+          li {
+            background: $white;
+            width: fit-content;
+            height: fit-content;
+            list-style: none;
+            padding: 4px 14px;
+            border-radius: 18px;
+            font-size: $font14;
+            margin: 0 6px 4px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            border: 1px solid $gray-less-light;
+
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .objectiveRightContainer {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .objectiveOfferHelp {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: $blue-light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @media only screen and (max-width: $grid-breakpoint-md) {
+      display: flex;
+      flex-direction: column;
+
+      .tagsCard {
+        width: 100%;
+      }
+
+      .objectiveRightContainer {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .mobileOfferHelp {
+      width: 30%;
+
+      .objectiveOfferHelp {
+        width: 60px;
+        height: 60px;
+      }
+
+      p {
+        font-size: $font18;
+      }
+    }
+  }
+}

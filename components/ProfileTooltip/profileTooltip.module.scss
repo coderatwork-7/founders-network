@@ -1,0 +1,12 @@
+.popover {
+  max-width: fit-content;
+
+  .card {
+    width: 464px;
+    min-height: 215px;
+
+    .spinner {
+      min-height: inherit;
+    }
+  }
+}

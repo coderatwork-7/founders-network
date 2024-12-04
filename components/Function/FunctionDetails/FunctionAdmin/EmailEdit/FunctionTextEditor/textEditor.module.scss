@@ -1,0 +1,13 @@
+@import '@/styles/override';
+
+.textfields {
+  width: 100%;
+  padding: 7px 7px;
+  border: 1px solid $gray-lighter;
+  outline: 0;
+}
+
+.cc {
+  border-top: 0;
+  border-bottom: 0;
+}

@@ -1,0 +1,56 @@
+@import '@/styles/override';
+
+.container {
+  background-color: $white;
+  border-color: $container-border-opacity;
+  .objective {
+    font-size: $small;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @supports (-webkit-line-clamp: 2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .row {
+    border-bottom: 1px solid $container-border-opacity;
+    padding: 10px;
+
+    .label {
+      font-size: $small;
+      font-weight: 400;
+      color: $fn-secondary-color;
+      text-align: left;
+    }
+
+    .heading {
+      font-size: $large;
+      line-height: 18px;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .colorRegent {
+    &,
+    &:hover {
+      background-color: $fn-regent-st-blue;
+      border: 1px solid $fn-regent-st-blue;
+    }
+    &:hover {
+      color: $white;
+      background-color: rgb($fn-regent-st-blue, 0.8);
+      border: 1px solid rgb($fn-regent-st-blue, 0.8);
+    }
+  }
+}

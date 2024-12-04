@@ -1,0 +1,68 @@
+@import '@/styles/override';
+
+.tooltipContainer {
+  width: 300px;
+  left: 230px;
+  height: auto;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+  font-weight: 100;
+  min-height: 100px;
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    content: '';
+  }
+}
+
+.left {
+  position: absolute;
+  &::after {
+    top: 15px;
+    right: 100%;
+    transform: rotate(135deg);
+    margin-right: -9px;
+    background-color: white;
+  }
+}
+
+.top {
+  position: absolute;
+  &::after {
+    top: 15px;
+    right: 48%;
+    transform: rotate(225deg);
+    margin-top: -26px;
+    background-color: white;
+  }
+}
+
+.bottom {
+  position: absolute;
+  &::after {
+    top: 91%;
+    right: 48%;
+    transform: rotate(45deg);
+    margin-top: 0;
+    background-color: white;
+  }
+}
+
+.right {
+  position: absolute;
+  &::after {
+    top: 45px;
+    left: 100%;
+    transform: rotate(-45deg);
+    margin-left: -9px;
+    background-color: white;
+  }
+}

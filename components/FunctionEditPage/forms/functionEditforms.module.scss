@@ -1,0 +1,165 @@
+@import '@/styles/override';
+
+.form {
+  padding: 10px 0;
+
+  .carouselContainer {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    border: 1px solid $gray-lighter;
+  }
+}
+
+.field {
+  width: 100%;
+  padding: 15px 0;
+
+  .label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: $small;
+    text-transform: uppercase;
+    margin: 4px 0 6px;
+  }
+
+  .fieldInput {
+    input,
+    textarea {
+      margin: 0;
+      width: 100%;
+      display: block;
+      padding: 8px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.6px;
+      border: 1px solid $gray-lighter;
+      font-size: $small;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $gray;
+      }
+
+      &::placeholder {
+        color: $gray-darker;
+      }
+
+      @media (max-width: $grid-breakpoint-sm) {
+        padding: 6px 8px;
+        letter-spacing: 0.4px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .err {
+    color: $red;
+    margin-top: 2px;
+    font-size: $xsmall;
+    letter-spacing: 0.6px;
+  }
+}
+
+.sub3Field {
+  flex: 0 0 33%;
+}
+
+.sub2Field {
+  flex: 0 0 50%;
+}
+
+.selectInput {
+  .control {
+    padding-left: 0;
+
+    &:focus-within {
+      box-shadow: none;
+      border-color: $gray;
+    }
+  }
+
+  .placeholder {
+    font-size: $small;
+    color: $gray-darker;
+    letter-spacing: 0.6px;
+  }
+
+  .selectValue,
+  .tag {
+    font-size: $small;
+    color: $black;
+    letter-spacing: 0.6px;
+  }
+}
+
+.checkbox {
+  input {
+    margin: 0 !important;
+  }
+}
+
+.checkLabel {
+  letter-spacing: 0.6px;
+  font-size: $small;
+}
+
+.editorContainer {
+  max-width: max(600px, calc(66% + 24px));
+}
+
+.headerImage {
+  width: 660px;
+  height: 220px;
+}
+
+.directoryImage {
+  width: 330px;
+  height: 220px;
+}
+
+.zIndex2 {
+  z-index: 2 !important;
+}
+
+.imgInfo {
+  color: $gray;
+  margin-top: 4px;
+  font-size: $small;
+  letter-spacing: 0.4px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .headerImage {
+    width: 540px;
+    height: 180px;
+  }
+
+  .directoryImage {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .headerImage {
+    width: 360px;
+    height: 120px;
+  }
+
+  .directoryImage {
+    width: 210px;
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headerImage {
+    width: 270px;
+    height: 90px;
+  }
+
+  .directoryImage {
+    width: 150px;
+    height: 100px;
+  }
+}

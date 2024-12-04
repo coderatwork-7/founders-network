@@ -1,0 +1,29 @@
+@import '@/styles/override';
+
+.leftPanel {
+  flex: 2 2 0;
+}
+
+.rightPanel {
+  flex: 6 6 0;
+}
+
+.panelList {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.oddPeople {
+  background-color: $blue-lightest;
+}
+
+.peopleList {
+  padding: 5px 10px;
+}
+
+.editor {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 5px;
+}

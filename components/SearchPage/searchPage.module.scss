@@ -1,0 +1,150 @@
+@import '@/styles/override';
+
+.loadingContainer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionWrapper {
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 0 10px;
+  }
+}
+
+.searchGroup {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $gray;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.grouHeading {
+  display: flex;
+  padding: 10px 8px 10px 2px;
+  justify-content: space-between;
+
+  .groupName {
+    text-transform: uppercase;
+    font-size: $heading6;
+    letter-spacing: 0.8px;
+    color: $black;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    padding: 5px 5px 5px 2px;
+    font-size: $base;
+
+    .groupName {
+      font-size: $large;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 5px 0;
+    flex-direction: column;
+
+    .groupName {
+      font-size: $largemb;
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+.groupPageLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: $large;
+  letter-spacing: 0.8px;
+
+  &.cardEnd {
+    display: none;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    font-size: $base;
+    letter-spacing: 0.6px;
+    gap: 5px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+
+    &.cardEnd {
+      display: flex;
+      font-size: $basemb;
+      justify-content: center;
+    }
+  }
+}
+
+.cardsList {
+  display: grid;
+  justify-items: stretch;
+  padding: 10px 0 20px;
+  gap: 15px 25px;
+
+  &.functions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.members,
+  &.partners,
+  &.deals {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &.forums {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    padding: 5px 0 15px;
+    gap: 15px 10px;
+
+    &.members,
+    &.partners,
+    &.deals {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    &.functions {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    &.members,
+    &.partners,
+    &.deals {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.err {
+  font-size: $heading6;
+  margin-top: 25px;
+  letter-spacing: 0.8px;
+}

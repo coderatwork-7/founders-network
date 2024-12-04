@@ -1,0 +1,50 @@
+@import '@/styles/override';
+
+.guidelineContent {
+  margin: 10px 0 40px 0;
+  h1,
+  h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .content {
+    color: $black;
+    font-size: $largebold;
+    padding: 20px 40px;
+    line-height: 1.7;
+    text-align: left;
+  }
+  ul {
+    list-style: disc;
+    text-align: left;
+    padding: 0 20px;
+  }
+  ol {
+    list-style: decimal;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .stageForums {
+    margin: 20px 20px;
+    box-sizing: border-box;
+    padding: 40px 50px;
+    box-shadow: 0px 5px 20px 1px rgba(200, 200, 200, 0.4);
+    ul {
+      list-style: circle;
+    }
+  }
+  &.mobileContent {
+    .content {
+      font-size: large;
+    }
+    h1 {
+      font-size: $largebold;
+    }
+    h2 {
+      font-size: $heading6;
+    }
+    .stageForums {
+      padding: 10px 20px;
+    }
+  }
+}

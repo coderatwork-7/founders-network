@@ -1,0 +1,1 @@
+export {KeywordInputFacet} from './keywordInputFacet';

@@ -1,0 +1,40 @@
+@import '@/styles/override';
+
+.container {
+  text-align: justify;
+
+  .succcessModalBody {
+    max-height: calc(100vh - 200px);
+  }
+}
+
+.description {
+  color: $fn-secondary-color;
+  margin: 10px 0 20px;
+
+  h5,
+  h6 {
+    color: $gray-dark;
+    margin-bottom: 0;
+  }
+}
+
+.savings {
+  font-size: $font18;
+  color: $fn-primary-color;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+.seeMoreLink {
+  font-size: $font14;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,287 @@
+@import '@/styles/override';
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .page {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.coverImgContainer {
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 370px;
+  background-color: rgba($color: $fn-light-green, $alpha: 0.4);
+
+  .coverImg {
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: $heading1;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: $heading5bold;
+  color: $gray-dim;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.5;
+}
+
+.details {
+  display: block;
+  background: $white;
+  box-sizing: border-box;
+  padding: 50px 70px;
+  box-shadow: 0px 5px 20px 1px rgba($color: $gray-lighter, $alpha: 0.4);
+  font-size: $largebold;
+  line-height: 1.5;
+  color: $gray-darkest;
+  text-align: left;
+  margin: 50px 0;
+
+  p:first-child {
+    font-size: $heading4bold;
+    margin: 0 0 70px 0;
+    letter-spacing: 0.8px;
+    display: block;
+    line-height: 1.4;
+
+    &::first-letter {
+      font-size: 140px;
+      line-height: 40px;
+      color: rgba($color: $fn-light-green, $alpha: 0.45);
+      font-weight: bold;
+      float: left;
+      padding-bottom: 20px;
+      margin-right: 14px;
+    }
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: $heading3;
+    color: $gray-dark;
+    line-height: 1.4;
+    margin: 7px 0 13px 0px;
+    padding: 0;
+
+    strong {
+      all: inherit;
+    }
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: $heading4;
+    margin: 25px 0;
+  }
+
+  h4 {
+    font-weight: bold;
+    margin: 40px 0 25px;
+  }
+
+  ul {
+    all: unset;
+    display: block;
+    padding-inline-start: 40px;
+    margin: 20px 0;
+
+    li {
+      line-height: 1.3;
+      margin: 5px 0;
+    }
+
+    ul {
+      list-style-type: circle;
+      margin: 10px 0 20px;
+
+      li {
+        line-height: 1.3;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  ol {
+    all: unset;
+    display: block;
+    padding-inline-start: 40px;
+    list-style-type: decimal;
+    margin: 20px 0;
+
+    li {
+      line-height: 1.4;
+      margin: 15px 0;
+    }
+
+    ul {
+      list-style-type: circle;
+
+      li {
+        line-height: 1.3;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
+
+.mentionLabel {
+  font-size: $heading3;
+  letter-spacing: 0.8px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.mentionedPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  margin: 30px 0 50px;
+  text-align: left;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .title {
+    font-size: $heading2mb;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: $heading6mb;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .details {
+    font-size: $largemb;
+    margin: 25px 0;
+    padding: 40px 35px;
+    line-height: 1.4;
+
+    p:first-child {
+      font-size: $heading4boldmb;
+      margin: 0 0 40px 0;
+      letter-spacing: 0.3px;
+      line-height: 1.3;
+
+      &::first-letter {
+        font-size: 90px;
+        line-height: 40px;
+        padding-bottom: 20px;
+        margin-right: 4px;
+      }
+    }
+
+    h2 {
+      font-size: $heading4mb;
+    }
+
+    h3 {
+      font-size: $heading5mb;
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-inline-start: 20px;
+      margin: 15px 0;
+
+      li {
+        margin: 5px 0;
+      }
+
+      ul {
+        margin: 10px 0 20px;
+
+        li {
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+
+    ol {
+      padding-inline-start: 20px;
+      margin: 15px 0;
+
+      li {
+        margin: 15px 0;
+      }
+
+      ul {
+        li {
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+
+  .mentionLabel {
+    margin-top: 35px;
+    font-size: $heading4mb;
+    line-height: 1.2;
+  }
+
+  .mentionedPosts {
+    margin: 15px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .title {
+    font-size: $heading3mb;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: $largemb;
+    line-height: 1.4;
+  }
+
+  .details {
+    padding: 30px 20px;
+
+    p:first-child {
+      font-size: $heading4mb;
+      margin: 0 0 30px 0;
+
+      &::first-letter {
+        font-size: 80px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .mentionLabel {
+    font-size: $heading5mb;
+  }
+}

@@ -1,0 +1,127 @@
+@import '@/styles/override';
+
+.tinyMceEditor {
+  flex: 0 0 94px;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+
+  :global {
+    .tox.tox-tinymce {
+      min-height: 94px;
+      height: 100% !important;
+      border: none !important;
+      .tox-edit-area {
+        iframe {
+          border: 1px solid $gray-90;
+          border-radius: 8px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .tox-editor-header {
+      border: none !important ;
+      width: 100% !important;
+      flex-shrink: 0;
+      margin-bottom: 0 !important;
+    }
+
+    .tox-toolbar__primary {
+      background: none !important;
+    }
+
+    .tox-toolbar__group {
+      padding: 0 !important;
+      width: 100%;
+
+      .tox-tbtn {
+        width: 34px !important;
+        justify-content: flex-start;
+      }
+
+      .tox-tbtn[title='Emojis'] {
+        justify-content: center !important;
+
+        svg {
+          scale: 1.2 !important;
+        }
+      }
+
+      .tox-tbtn--select:last-of-type {
+        cursor: pointer;
+        margin-left: auto;
+        color: $white;
+        min-height: 30px;
+        font-size: $font14;
+        border-radius: 3px;
+        padding: 12px 22px;
+        min-width: fit-content;
+        background-color: $bg-teal-light;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:disabled {
+          background-color: $bg-teal;
+        }
+
+        @media only screen and (max-width: 300px) {
+          padding: 12px 8px;
+        }
+      }
+    }
+  }
+}
+
+.editorContainer {
+  max-height: min(40vh, 300px);
+}
+
+.fileButton {
+  background-color: $gray-more-light;
+  border: none;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 8px 12px 0;
+  cursor: pointer;
+  border-radius: 14px;
+  max-width: 300px;
+  font-size: $font13;
+  gap: 10px;
+  display: inline-flex;
+
+  &:hover {
+    text-decoration: line-through;
+
+    .fileIcon {
+      display: none;
+
+      &.remove {
+        display: inline;
+      }
+    }
+  }
+}
+
+.fileIcon {
+  display: inline;
+  font-size: $font16;
+
+  &.remove {
+    display: none;
+  }
+}
+
+.hideEditor {
+  height: 0;
+  visibility: hidden;
+}
+
+.editorPlaceholder {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $base;
+}

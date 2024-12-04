@@ -1,0 +1,22 @@
+@import '@/styles/override';
+
+.cardContainer {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content {
+  font-size: $large;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    padding: 20px 20px;
+  }
+
+  .content {
+    font-size: $base;
+  }
+}

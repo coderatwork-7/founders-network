@@ -1,0 +1,20 @@
+@import '@/styles/override';
+
+.page {
+  background-color: $white;
+  min-height: calc(100vh - 65px);
+
+  :global {
+    .pageLayout {
+      margin-top: 65px;
+
+      .leftContainer {
+        border: 0px solid $gray-90;
+
+        @media (max-width: $grid-breakpoint-md) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

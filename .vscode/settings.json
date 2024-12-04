@@ -1,0 +1,13 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.format": "explicit"
+  },
+  "sonarlint.connectedMode.project": {
+    "connectionId": "https-sonarqube-objectedge-com",
+    "projectKey": "Founders-Network-Frontend-Sonar-Develop"
+  }
+}

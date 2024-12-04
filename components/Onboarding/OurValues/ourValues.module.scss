@@ -1,0 +1,27 @@
+@import '@/styles/override';
+
+.valuesContainer {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  .separator {
+    height: 5px;
+    width: 100%;
+    background-color: $green;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .ourValuesText {
+    color: $green;
+    font-size: $heading5bold;
+    margin-bottom: 20px;
+  }
+  .rulesText {
+    font-size: $heading6bold;
+  }
+  .ruleText {
+    font-size: $large;
+    padding: 0;
+    margin: 5px 0;
+  }
+}

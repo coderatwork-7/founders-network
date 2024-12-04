@@ -1,0 +1,25 @@
+@import '@/styles/override';
+
+.calendar {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: $font20;
+  color: $white;
+  cursor: pointer;
+  border: 1px solid $silver;
+  background-color: $white;
+}
+
+.subcalendar label {
+  cursor: pointer;
+  font-size: $smallmb;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: $gray-dark;
+  letter-spacing: 0.4px;
+}

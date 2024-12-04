@@ -1,0 +1,29 @@
+@import '@/styles/override';
+
+.InvestorProfileTab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.investmentRange {
+  display: flex;
+  gap: 1rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.descriptionList {
+  margin-bottom: 4rem;
+}

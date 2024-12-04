@@ -1,0 +1,78 @@
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$grid-breakpoint-xs: map_get($grid-breakpoints, 'xs');
+$grid-breakpoint-sm: map_get($grid-breakpoints, 'sm');
+$grid-breakpoint-md: map_get($grid-breakpoints, 'md');
+$grid-breakpoint-lg: map_get($grid-breakpoints, 'lg');
+$grid-breakpoint-xl: map_get($grid-breakpoints, 'xl');
+$grid-breakpoint-xxl: map_get($grid-breakpoints, 'xxl');
+
+//font sizes Desktop
+$xsmall: 13px;
+$xsmallbold: 17px;
+$small: 14px;
+$smallbold: 18px;
+$base: 16px;
+$basebold: 21px;
+$large: 18px;
+$largebold: 23px;
+$heading6: 20px;
+$heading6bold: 22px;
+$heading5: 23px;
+$heading5bold: 25px;
+$heading4: 26px;
+$heading4bold: 29px;
+$heading3: 29px;
+$heading3bold: 32px;
+$heading2: 32px;
+$heading2bold: 35px;
+$heading1: 36px;
+$heading1bold: 40px;
+
+//font sizes Mobile
+$xsmallmb: 11px;
+$xsmallboldmb: 14px;
+$smallmb: 12px;
+$smallboldmb: 16px;
+$basemb: 14px;
+$baseboldmb: 18px;
+$largemb: 16px;
+$largeboldmb: 21px;
+$heading6mb: 18px;
+$heading6boldmb: 20px;
+$heading5mb: 20px;
+$heading5boldmb: 22px;
+$heading4mb: 22px;
+$heading4boldmb: 24px;
+$heading3mb: 25px;
+$heading3boldmb: 28px;
+$heading2mb: 28px;
+$heading2boldmb: 31px;
+$heading1mb: 32px;
+$heading1boldmb: 25px;
+
+//font sizes
+$font10: 10px;
+$font11: 11px;
+$font12: 12px;
+$font13: 13px;
+$font14: 14px;
+$font15: 15px;
+$font16: 16px;
+$font17: 17px;
+$font18: 18px;
+$font19: 19px;
+$font20: 20px;
+$font22: 22px;
+$font24: 24px;
+$font25: 25px;
+$font27: 27px;
+$font30: 30px;

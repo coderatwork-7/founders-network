@@ -1,0 +1,72 @@
+@import '@/styles/override';
+
+.ticket {
+  display: flex;
+  align-items: center;
+  font-size: $font14;
+  padding: 8px;
+  letter-spacing: 0.8px;
+
+  .info {
+    width: 35%;
+  }
+
+  .type {
+    width: 30%;
+    font-size: $font14;
+    text-align: center;
+    margin: 3px 0 8px;
+
+    &.nonSelectable {
+      margin: 0;
+    }
+  }
+
+  .selection {
+    width: 35%;
+    padding-left: 10px;
+    text-align: center;
+    .guestCount {
+      font-size: $font14;
+      gap: 30px;
+    }
+  }
+}
+
+.selection .btn {
+  color: $blue;
+  display: flex;
+  gap: 2px;
+  padding: 5px;
+  border-color: $blue;
+  font-size: $font12;
+  width: 100px;
+  margin: auto;
+  flex-wrap: wrap;
+
+  &:hover {
+    background-color: inherit;
+    color: $blue;
+  }
+
+  &.selected {
+    color: $white;
+    background-color: $blue;
+  }
+
+  @media (max-width: 480px) {
+    width: fit-content;
+  }
+}
+
+.removeCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  input {
+    height: 20px;
+    width: 20px;
+  }
+}

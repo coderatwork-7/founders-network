@@ -1,0 +1,25 @@
+@import '@/styles/override';
+.container {
+  overflow: hidden;
+  p {
+    margin: 0;
+  }
+  .email {
+    font-size: $small;
+  }
+  .description {
+    font-weight: lighter;
+    color: $gray-dark;
+    text-align: left;
+    font-weight: lighter;
+    font-size: $small;
+    line-height: 20px;
+  }
+  .background {
+    background-color: rgb($gray-dark, 0.2);
+    padding: 2px;
+  }
+}
+.bold {
+  font-weight: bolder;
+}

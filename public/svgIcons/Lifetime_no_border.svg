@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="7650.762 367 117.323 119.591">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #49b483;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Path_65);
+      }
+
+      .cls-4 {
+        filter: url(#Ellipse_13);
+      }
+    </style>
+    <filter id="Ellipse_13" x="7650.762" y="367" width="117.323" height="119.591" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_65" x="7663.674" y="398.778" width="92.437" height="54.978" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_103" data-name="Group 103" transform="translate(7659.762 373)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -7659.76, -373)">
+      <ellipse id="Ellipse_13-2" data-name="Ellipse 13" class="cls-1" cx="49.661" cy="50.796" rx="49.661" ry="50.796" transform="translate(7659.76 373)"/>
+    </g>
+    <g id="_43410" data-name="43410" transform="translate(12.912 31.778)">
+      <g id="Group_102" data-name="Group 102">
+        <g class="cls-3" transform="matrix(1, 0, 0, 1, -7672.67, -404.78)">
+          <path id="Path_65-2" data-name="Path 65" class="cls-2" d="M57.422,38.631c-10.56,0-17.549,8.831-23.715,16.625C28.44,61.914,23.465,68.2,17.407,68.2c-6.3,0-10.164-6.62-10.164-11.366,0-4.4,4.242-10.795,10.889-10.795,6.451,0,9.811,5.281,9.981,5.551A3.574,3.574,0,0,0,33.076,52.8a3.752,3.752,0,0,0,1.208-5.091c-.221-.37-5.533-9.082-16.152-9.082C7.447,38.632,0,48.226,0,56.835c0,8.88,7.149,18.774,17.406,18.774,9.513,0,15.827-7.977,21.931-15.693C44.984,52.781,50.318,46.04,57.422,46.04c4.227,0,7,1.467,8.489,4.48a15.256,15.256,0,0,1,1.284,6.6,15.954,15.954,0,0,1-1.71,6.192,7.494,7.494,0,0,1-7.17,4.433c-6.624,0-10.2-4.4-11.551-6.063a7.957,7.957,0,0,0-.939-1.037,3.567,3.567,0,0,0-5.107.4,3.764,3.764,0,0,0,.237,5.075c.065.076.144.176.238.292,1.757,2.162,7.1,8.738,17.121,8.738C70.5,75.152,74.437,63,74.437,57.069a22.23,22.23,0,0,0-2.058-9.881C70.458,43.286,66.3,38.631,57.422,38.631Z" transform="translate(7672.67 366.15)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

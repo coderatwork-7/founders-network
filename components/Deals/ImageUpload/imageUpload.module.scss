@@ -1,0 +1,25 @@
+@import '@/styles/override';
+
+.imagePreviewContainer {
+  position: relative;
+  width: 250px;
+  border: 1px solid $blue;
+}
+
+.cancelButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border: 0;
+  border-radius: 50%;
+  background-color: $blue;
+  color: $white;
+  width: 30px;
+  height: 30px;
+}
+
+.imageInput {
+  padding: 0 !important;
+  border: 0 !important;
+}

@@ -1,0 +1,66 @@
+@import '@/styles/override';
+
+.mainContainer {
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+  text-align: start;
+  .imageSection {
+    flex-basis: 20%;
+  }
+  .contentSection {
+    flex-basis: 80%;
+  }
+}
+
+.companyImage {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.messageButton {
+  min-height: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding: 20px;
+  text-align: start;
+  border-top: 2px solid $silver;
+}
+
+.tagContainer {
+  font-size: $small;
+}
+.valueContainer {
+  color: $gray;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .mainContainer {
+    flex-direction: column;
+    padding: 15px;
+    .imageSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .companyImage {
+    max-height: 120px;
+  }
+
+  .messageButton {
+    width: 100%;
+    height: 40px;
+  }
+
+  .footerContainer {
+    grid-template-columns: repeat(2, 2fr);
+    padding: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+@import '@/styles/override';
+
+.contentTitle {
+  color: $gray-darkest;
+  padding: 45px 0px 35px 0px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+}
+
+.testimonialContainer {
+  border: none;
+  border-radius: 3px 3px 0px 0px;
+  border-left: solid 7px $cd-border-purple;
+  padding: 20px;
+  display: flex;
+
+  .quoteContainer {
+    width: 73%;
+    font-size: $base;
+    margin-left: 20px;
+    text-align: left;
+
+    .quoteAuthor {
+      margin-top: 10px;
+      color: $gray-darkest;
+      font-style: italic;
+    }
+  }
+}
+
+.scheduleMeetContainer {
+  margin-top: 80px;
+  .callIconContainer {
+    width: 70px;
+    height: 70px;
+    margin: 15px 0px;
+  }
+  .callHeader {
+    margin-bottom: 30px;
+  }
+
+  .scheduleCallButton {
+    font-size: $base;
+  }
+}
+
+.imageContainerStyles {
+  border: solid 1px $gray-less-lightest;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.iconStyles {
+  color: white;
+  background-color: $green;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .scheduleCallButton {
+    width: 90%;
+  }
+}

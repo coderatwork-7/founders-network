@@ -1,0 +1,48 @@
+@import '@/styles/override';
+
+.costItem {
+  display: flex;
+  margin: 2px 0;
+  gap: 5px;
+}
+
+.itemName {
+  &::after {
+    content: ':';
+  }
+}
+
+.itemPrice {
+  flex: 0 0 60px;
+  font-weight: bold;
+  &::first-letter {
+    font-weight: normal;
+  }
+}
+
+.ticketCost {
+  letter-spacing: 0.8px;
+  font-size: $font14;
+
+  &.detailedMode {
+    margin: 5px 5%;
+
+    .costItem {
+      margin: 0;
+
+      &:last-of-type {
+        border-top: 1px solid $gray-lighter;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+    }
+
+    .itemName {
+      flex: 1 0 0;
+
+      &::after {
+        content: '';
+      }
+    }
+  }
+}

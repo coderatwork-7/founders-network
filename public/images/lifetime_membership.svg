@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1071 95 118 118">
+  <defs>
+    <filter id="Ellipse_22" x="1071" y="95" width="118" height="118" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_27" x="1084" y="126.281" width="92.944" height="54.399" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_27" data-name="Group 27" transform="translate(12 56)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -12, -56)">
+      <circle id="Ellipse_22-2" data-name="Ellipse 22" style="fill: #49b483;" cx="50" cy="50" r="50" transform="translate(1080 101)"/>
+    </g>
+    <g id="_43410" data-name="43410" transform="translate(1081 37.65)">
+      <g id="Group_26" data-name="Group 26" transform="translate(0 38.631)">
+        <g class="cls-3" transform="matrix(1, 0, 0, 1, -1093, -132.28)">
+          <path id="Path_27-2" data-name="Path 27" style="fill: #fff;" d="M57.814,38.631c-10.632,0-17.669,8.693-23.876,16.365-5.3,6.553-10.312,12.742-16.412,12.742-6.34,0-10.233-6.516-10.233-11.188,0-4.331,4.27-10.626,10.964-10.626A12.478,12.478,0,0,1,28.3,51.388a3.646,3.646,0,0,0,6.214-3.816c-.223-.364-5.571-8.94-16.262-8.94C7.5,38.632,0,48.075,0,56.55c0,8.741,7.2,18.48,17.525,18.48,9.578,0,15.934-7.853,22.08-15.447,5.685-7.023,11.056-13.659,18.208-13.659,4.256,0,7.052,1.444,8.546,4.41a14.722,14.722,0,0,1,1.293,6.5,15.425,15.425,0,0,1-1.722,6.095,7.563,7.563,0,0,1-7.218,4.363,14.724,14.724,0,0,1-11.63-5.968,7.9,7.9,0,0,0-.946-1.021,3.646,3.646,0,0,0-4.9,5.392c.066.075.145.173.239.287a21.792,21.792,0,0,0,17.238,8.6c12.266,0,16.232-11.96,16.232-17.8a21.469,21.469,0,0,0-2.072-9.726C70.938,43.213,66.756,38.631,57.814,38.631Z" transform="translate(1093 93.65)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

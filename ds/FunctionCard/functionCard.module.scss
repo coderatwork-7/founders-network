@@ -1,0 +1,108 @@
+@import '@/styles/override';
+
+.wrapper {
+  min-width: 300px;
+  max-width: 49%;
+
+  .card-container {
+    min-height: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .badges {
+    top: 10px;
+    right: 15px;
+  }
+
+  .thumbnail-container {
+    cursor: pointer;
+    height: 100h;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      left: 0;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border-radius: 8px 8px 0 0;
+      font-size: 90px;
+      color: $white;
+    }
+
+    .thumbnail-image {
+      border-radius: 8px 8px 0 0;
+      height: 100h;
+      object-fit: cover;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4.5rem;
+  }
+
+  .content {
+    font-size: $font14;
+
+    .rows {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &.mh {
+        min-height: 42px;
+      }
+    }
+
+    .datetime {
+      font-size: $font11;
+    }
+  }
+
+  &.mobile {
+    min-width: 100%;
+    max-width: 100%;
+
+    &:not(.searchCard) .card-container {
+      min-height: 430px;
+    }
+
+    .title {
+      font-size: $font13;
+    }
+  }
+
+  &.searchCard {
+    min-width: 0;
+    max-width: 100%;
+
+    .card-container {
+      min-height: 380px;
+
+      .title {
+        min-height: 30px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: $small;
+  letter-spacing: 1px;
+  padding: 0 12px;
+
+  @media only screen and (max-width: 400px) {
+    font-size: $smallmb;
+    letter-spacing: 0.6px;
+    min-height: 40px;
+  }
+}

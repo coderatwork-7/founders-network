@@ -1,0 +1,52 @@
+@import '@/styles/override';
+
+.AvatarEditor {
+  position: relative;
+}
+
+.imagePreviewContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagePreview {
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  padding: 3px;
+  background-color: #fff;
+}
+
+.fallback {
+  height: 180px;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  padding: 3px;
+  background-color: $gray-lightest-special;
+  font-size: 4rem;
+}
+
+.editButton {
+  position: relative;
+  margin-top: -16px;
+  overflow: hidden;
+  background-color: $bg-color;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+  svg {
+    font-size: 1.25rem;
+  }
+}

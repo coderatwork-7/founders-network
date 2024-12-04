@@ -1,0 +1,64 @@
+@import '@/styles/override';
+.inputContainer {
+  position: relative;
+}
+.paymentIconsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+.minHeight {
+  min-height: 20px;
+}
+.scale:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  min-height: 42px;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 1px 1px $fn-green;
+  }
+}
+
+.ccText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  min-height: 42px;
+}
+
+.errorMessage {
+  color: $orange;
+  font-size: 0.75rem;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container input[type='text']::placeholder {
+    font-size: $small;
+  }
+}

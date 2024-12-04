@@ -1,0 +1,54 @@
+@import '@/styles/override';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  flex: 1 0 0;
+  padding: 15px;
+  position: relative;
+}
+
+.spinner {
+  display: flex;
+  background-color: rgba($color: $white, $alpha: 0.5);
+  z-index: 1080;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+}
+
+.title {
+  font-size: $heading6;
+  color: $blue;
+  line-height: 22px;
+  margin: 10px 0 5px;
+  min-height: 45px;
+  @media (max-width: $grid-breakpoint-md) {
+    min-height: 0px;
+  }
+}
+
+.info {
+  font-size: $base;
+}
+
+.content {
+  font-size: $base;
+  margin-bottom: 15px;
+}
+
+.authorInfo {
+  border-top: 1px solid $gray-lighter;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.companyName {
+  font-size: $small;
+  color: $fn-secondary-color;
+  letter-spacing: 1px;
+}

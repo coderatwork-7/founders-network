@@ -1,0 +1,34 @@
+@import '@/styles/override';
+
+.badge {
+  padding: 8px;
+  font-size: $font14;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: $green-light;
+  border: 1px solid currentColor;
+  background-color: $white;
+}
+
+.selectable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected {
+  color: $bg-mint-green;
+  background-color: $green-light;
+}
+
+@media (hover: hover) {
+  .selectable {
+    &:hover {
+      color: $bg-mint-green;
+      background-color: $green-light;
+    }
+
+    &.selected:hover {
+      background-color: $green;
+    }
+  }
+}

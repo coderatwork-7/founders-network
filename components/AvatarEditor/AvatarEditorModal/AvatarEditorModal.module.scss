@@ -1,0 +1,27 @@
+@import '@/styles/override';
+
+.AvatarEditorModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imagePreview {
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  position: relative;
+  border-radius: 50%;
+}
+
+.saveButton {
+  align-self: flex-end;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

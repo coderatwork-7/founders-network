@@ -1,0 +1,31 @@
+@import '@/styles/override';
+
+.philosophyContainer {
+  text-align: left;
+
+  .philosophyMainHeader {
+    margin: 45px 0px 35px;
+    text-align: center;
+  }
+
+  .philosophySecondaryHeader {
+    margin-bottom: 10px;
+  }
+
+  .philosophyTertiaryHeader {
+    margin-bottom: 35px;
+    font-style: italic;
+  }
+}
+
+.philosophyParagraph {
+  line-height: 1.8;
+}
+
+.upgradenowButtonContainer {
+  transform: translate(0, -50%);
+  .upgradenowButton {
+    width: 250px;
+    min-height: 40px;
+  }
+}

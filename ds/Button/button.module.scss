@@ -1,0 +1,271 @@
+@import '@/styles/override';
+
+.button {
+  background-color: $white;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  min-height: 46px;
+  font-size: $font16;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+}
+
+.btn-sm {
+  min-height: 30px;
+  font-size: $font14;
+}
+
+.btn-lg {
+  font-size: $font18;
+}
+
+.primary {
+  border: 1px solid $primary-btn;
+  background-color: $primary-btn;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:disabled {
+    background-color: $primary-btn-hover !important;
+    border: 1px solid $primary-btn-hover !important;
+  }
+}
+
+.secondary {
+  border: 1px solid $secondary-btn;
+  background-color: $secondary-btn;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:disabled {
+    background-color: $secondary-btn-hover !important;
+    border: 1px solid $secondary-btn-hover !important;
+  }
+}
+
+.tertiary {
+  border: 1px solid $tertiary-btn;
+  background-color: $tertiary-btn;
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:disabled {
+    background-color: $tertiary-btn-hover !important;
+    border: 1px solid $tertiary-btn-hover !important;
+    color: $white !important;
+  }
+}
+
+.outline-primary {
+  color: $outline-primary-btn;
+  border: 1px solid $outline-primary-btn;
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    border: 1px solid $outline-primary-btn !important;
+    background: $outline-primary-btn !important;
+    color: $white !important;
+  }
+}
+
+.outline-primary-inherit {
+  color: $outline-primary-btn;
+  border: 1px solid $outline-primary-btn;
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    border: 1px solid $outline-primary-btn !important;
+    background: inherit !important;
+    color: $white !important;
+  }
+}
+
+.outline-secondary {
+  color: $outline-secondary-btn;
+  border: 1px solid $outline-secondary-btn;
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    border: 1px solid $outline-secondary-btn !important;
+    background: #1c6867 !important;
+    color: $white !important;
+  }
+}
+
+.outline-tertiary {
+  color: $outline-tertiary-btn;
+  border: 1px solid $outline-tertiary-btn;
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    border: 1px solid $outline-tertiary-btn !important;
+    background: $outline-tertiary-btn !important;
+    color: $white !important;
+  }
+}
+
+.card-primary {
+  display: inline-block;
+  font-size: 13.5px;
+  margin-left: auto;
+  line-height: 39px;
+  border-radius: 3px;
+  height: 41px;
+  color: $blue;
+  background-color: $white;
+  outline: none;
+  border: 1px solid $blue;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.square-primary {
+  border-radius: 0;
+  border: 1px solid $blue;
+  color: $blue;
+  font-size: 14px;
+  line-height: 43px;
+  background-color: $white;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.blue-primary {
+  background-color: $blue;
+  border: 1px solid $blue;
+  line-height: 40px;
+  font-size: $font14;
+  font-weight: bold;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $blue-light !important;
+    color: $white !important;
+  }
+}
+
+.text-only {
+  background: none;
+  border: none;
+  color: black;
+  &:hover:enabled {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.061);
+  }
+  &:disabled {
+    color: gray;
+    background-color: unset;
+  }
+}
+
+.modal {
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  padding: 8px 25px;
+  font-size: $font14;
+  transition: none;
+  height: auto;
+  min-height: auto;
+  line-height: inherit;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+
+  &:hover:not(:disabled) {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &:disabled {
+    color: $gray-dark;
+    border-color: currentColor;
+    opacity: 1;
+  }
+}
+
+.decline,
+.tickets {
+  padding: 0 40px;
+  font-size: 16px;
+}
+
+.decline {
+  margin-right: 15px;
+  border: 1px solid $gray-brownish;
+  color: $gray-brownish;
+
+  &:hover {
+    background-color: $gray-brownish;
+  }
+}
+
+.mobile {
+  &.decline,
+  &.tickets {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+}
+
+.verySmall.verySmall {
+  font-size: 12px;
+  min-height: 30px;
+  height: 30px;
+  line-height: 25px;
+  padding: 0 6px;
+}
+
+.occupyHalfWidth {
+  width: 49%;
+}
+
+@mixin dynamicColor($color) {
+  &,
+  &:hover {
+    background-color: $color !important;
+    border-color: $color !important;
+  }
+}
+.blueColor {
+  @include dynamicColor($blue);
+}
+
+.purpleColor {
+  @include dynamicColor($purple);
+}
+
+.brownColor {
+  @include dynamicColor($bg-tan);
+}
+
+.greenColor {
+  @include dynamicColor($fn-light-green);
+}

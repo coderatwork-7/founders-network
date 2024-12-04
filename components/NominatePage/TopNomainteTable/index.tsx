@@ -1,0 +1,1 @@
+export {TopNominateTable} from './topNominateTable';

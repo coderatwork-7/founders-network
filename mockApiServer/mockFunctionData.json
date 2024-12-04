@@ -1,0 +1,199 @@
+[
+  {
+    "id": "2817",
+    "type": "function",
+    "subtype": "post",
+    "title": "fnGlobal Keynote & Roundtables with SafetyPay Co-Founder Barbara Bibas Montero (April 27, 2023)",
+    "creationTimestamp": "2023-04-04T07:57:04.817123Z",
+    "location": "Boston",
+    "eventLink": "https://us02web.zoom.us/j/86007624331",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/n09lo2a/FN_Syndicate_Funding_Pitch_-_FN_Directory_1.png",
+      "altText": "",
+      "videoLink": "<iframe src=\"//www.youtube.com/embed/tS4iWFfMJNA\" width=\"100%\" height=\"100%\" allowfullscreen=\"allowfullscreen\"></iframe>"
+    },
+    "details": {
+      "startDate": "2023-08-27T16:30:35.166018Z",
+      "startTimePT": "09:30:35 PDT",
+      "startTimeET": "12:30:35 EDT",
+      "endDate": "2023-08-27T18:30:35.166079Z",
+      "endTimePT": "11:30:35 PDT",
+      "endTimeET": "14:30:35 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": false
+    },
+    "eventBadge": ["angel"],
+    "attendeesCount": "125"
+  },
+  {
+    "id": "2741",
+    "type": "function",
+    "subtype": "post",
+    "title": "Bootstrapping Biotech: How to Maintain Company Ownership with Garren Hilow (December 1, 2022)",
+    "creationTimestamp": "2022-11-13T22:11:47.982996Z",
+    "location": "",
+    "eventLink": "https://us02web.zoom.us/j/86007624331",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/4vbnrgt/5_25_Adrian_Garcia_-_FN_Directory.png",
+      "altText": "",
+      "videoLink": ""
+    },
+    "details": {
+      "startDate": "2023-05-31T23:01:01.695977Z",
+      "startTimePT": "16:01:01 PDT",
+      "startTimeET": "19:01:01 EDT",
+      "endDate": "2023-06-26T18:45:01.696030Z",
+      "endTimePT": "11:45:01 PDT",
+      "endTimeET": "14:45:01 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": false
+    },
+    "attendeesCount": "18"
+  },
+  {
+    "id": "2833",
+    "type": "function",
+    "subtype": "post",
+    "title": "Beyond ChatGPT: How to Accelerate Startup Growth with GPT-4 (May 25, 2023)",
+    "creationTimestamp": "2023-05-09T10:03:41.989412Z",
+    "location": "",
+    "eventLink": "https://us02web.zoom.us/j/81851223778",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/1urmz5c/orientation%20fn%20dir%20pic.jpg",
+      "altText": "",
+      "videoLink": "<iframe src=\"//player.vimeo.com/video/70446472?title=0&amp;byline=0&amp;portrait=0&amp;color=336699\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>"
+    },
+    "details": {
+      "startDate": "2023-04-27T16:30:35.166018Z",
+      "startTimePT": "09:30:35 PDT",
+      "startTimeET": "12:30:35 EDT",
+      "endDate": "2023-04-27T18:30:35.166079Z",
+      "endTimePT": "11:30:35 PDT",
+      "endTimeET": "14:30:35 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": false
+    },
+    "eventBadge": ["angel", "seriesa"],
+    "attendeesCount": "95"
+  },
+  {
+    "id": "2818",
+    "type": "function",
+    "subtype": "post",
+    "title": "fnGlobal Keynote & Roundtables with SafetyPay Co-Founder Barbara Bibas Montero (April 27, 2023)",
+    "creationTimestamp": "2023-04-04T07:57:04.817123Z",
+    "location": "",
+    "eventLink": "https://us02web.zoom.us/j/86007624331",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/n09lo2a/FN_Syndicate_Funding_Pitch_-_FN_Directory_1.png",
+      "altText": "",
+      "videoLink": "<iframe src=\"//www.youtube.com/embed/tS4iWFfMJNA\" width=\"100%\" height=\"100%\" allowfullscreen=\"allowfullscreen\"></iframe>"
+    },
+    "details": {
+      "startDate": "2023-08-27T16:30:35.166018Z",
+      "startTimePT": "09:30:35 PDT",
+      "startTimeET": "12:30:35 EDT",
+      "endDate": "2023-08-27T18:30:35.166079Z",
+      "endTimePT": "11:30:35 PDT",
+      "endTimeET": "14:30:35 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": false
+    },
+    "eventBadge": [],
+    "attendeesCount": "35"
+  },
+  {
+    "id": "2745",
+    "type": "function",
+    "subtype": "post",
+    "title": "Bootstrapping Biotech: How to Maintain Company Ownership with Garren Hilow & Tom Handy & Smith David (December 1, 2022)",
+    "creationTimestamp": "2022-11-13T22:11:47.982996Z",
+    "location": "",
+    "eventLink": "https://us02web.zoom.us/j/86007624331",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/n09lo2a/FN_Syndicate_Funding_Pitch_-_FN_Directory_1.png",
+      "altText": "",
+      "videoLink": ""
+    },
+    "details": {
+      "startDate": "2023-05-31T23:01:01.695977Z",
+      "startTimePT": "16:01:01 PDT",
+      "startTimeET": "19:01:01 EDT",
+      "endDate": "2023-06-26T18:45:01.696030Z",
+      "endTimePT": "11:45:01 PDT",
+      "endTimeET": "14:45:01 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": true
+    },
+    "eventBadge": ["seriesa", "angel"],
+    "attendeesCount": "125"
+  },
+  {
+    "id": "2834",
+    "type": "function",
+    "subtype": "post",
+    "title": "Beyond ChatGPT: How to Accelerate Startup Growth with GPT-4 (May 25, 2023)",
+    "creationTimestamp": "2023-05-09T10:03:41.989412Z",
+    "location": "",
+    "eventLink": "https://us02web.zoom.us/j/81851223778",
+    "media": {
+      "imageSrc": "https://fnprofileimages3.s3.amazonaws.com/production/files/1urmz5c/orientation%20fn%20dir%20pic.jpg",
+      "altText": "",
+      "videoLink": "<iframe src=\"//player.vimeo.com/video/70446472?title=0&amp;byline=0&amp;portrait=0&amp;color=336699\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>"
+    },
+    "details": {
+      "startDate": "2023-04-27T16:30:35.166018Z",
+      "startTimePT": "09:30:35 PDT",
+      "startTimeET": "12:30:35 EDT",
+      "endDate": "2023-04-27T18:30:35.166079Z",
+      "endTimePT": "11:30:35 PDT",
+      "endTimeET": "14:30:35 EDT"
+    },
+    "addToCalendar": {
+      "ical": "#",
+      "outlook": "#",
+      "google": "#"
+    },
+    "status": {
+      "declined": false,
+      "bookedTicket": false
+    },
+    "eventBadge": ["lifetime"],
+    "attendeesCount": "125"
+  }
+]

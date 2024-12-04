@@ -1,0 +1,30 @@
+@import '@/styles/override';
+
+.ticketContainer {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.ticketButton {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  button {
+    width: 250px;
+  }
+}
+
+.ticketInclude {
+  ul {
+    all: revert;
+    text-align: start;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .ticketContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+@import '@/styles/override';
+
+.mapsContainer {
+  height: 300px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .mapsContainer {
+    height: 100%;
+  }
+}

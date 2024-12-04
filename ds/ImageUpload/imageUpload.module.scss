@@ -1,0 +1,121 @@
+@import '@/styles/override';
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 3px 1px $gray-more-light;
+  border: 1px solid transparent;
+  padding: 10px;
+
+  .image {
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &.dragging {
+    img {
+      opacity: 0.7;
+    }
+    outline: 3px solid $fn-light-sky-blue;
+    outline: 3px solid $blue;
+    border: 1px solid $white;
+  }
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  gap: 8px;
+  color: $white;
+  z-index: 2;
+
+  .icon {
+    background-color: $black;
+    opacity: 0.65;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box !important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 100%;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+
+    &.trash {
+      padding: 11px;
+    }
+  }
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: $black;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: $heading5;
+  justify-content: center;
+  border: 1px dashed $blue-light;
+  text-shadow: 0 0 1px $white;
+  background-color: rgba($color: $white, $alpha: 0.5);
+  pointer-events: none;
+
+  &.spinner {
+    border: 0;
+    color: $white;
+    font-size: $base;
+    background-color: rgba($color: $black, $alpha: 0.1);
+  }
+
+  &.dragging {
+    background-color: rgba($color: $blue, $alpha: 0.1);
+    border: 1px solid $blue-light;
+  }
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .overlay {
+    font-size: $heading5;
+  }
+}
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .container {
+    padding: 5px;
+  }
+  .overlay {
+    font-size: $base;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    padding: 2px;
+  }
+  .overlay {
+    font-size: $small;
+  }
+}

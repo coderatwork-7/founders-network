@@ -1,0 +1,42 @@
+@import '@/styles/override';
+
+.avatarContainer {
+  flex-basis: 25%;
+  display: flex;
+  gap: 10px;
+}
+
+.tweetContainer {
+  flex-basis: 73%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  .tweetText {
+    flex-basis: 85%;
+  }
+
+  .tweetIconContainer {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    padding: 2px;
+    color: $blue;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tweetIcon {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover,
+    &:active,
+    &:disabled {
+      background-color: $blue-lightest;
+    }
+  }
+}

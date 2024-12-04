@@ -1,0 +1,22 @@
+{
+  "id": 123,
+  "type": "angel",
+  "title": "Angel Level Membership Upgrade - Annual",
+  "price": "$123",
+  "offer": [
+    {
+      "title": "2 Months Free",
+      "price": "$0"
+    },
+    {
+      "title": "Prorated Days on your current plan",
+      "price": ""
+    }
+  ],
+  "total": {
+    "title": "Today's Total",
+    "price": "$0"
+  },
+  "isUpgradPossible": true,
+  "ccLastFourDigit": "1111"
+}

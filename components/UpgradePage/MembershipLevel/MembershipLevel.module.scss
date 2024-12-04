@@ -1,0 +1,127 @@
+@import '@/styles/override';
+
+.MembershipLevel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 4px 4px 6px 6px;
+  padding: 1rem 4rem;
+}
+
+.viewSeriesButton {
+  font-size: $large;
+  color: $blue;
+  margin-top: 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid $white !important;
+    color: $white !important;
+  }
+}
+
+.descriptionPlan {
+  padding: 35px 70px;
+  text-align: left;
+}
+.includedBenefitsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.includedBenefitsHeading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.lifeTimeButton {
+  background-color: $bg-dark-teal;
+  border: none;
+  &:hover,
+  &:disabled,
+  &:active {
+    background-color: $bg-dark-teal !important;
+    color: $white !important;
+  }
+}
+
+.price-primary {
+  font-size: 70px;
+  margin: 0px;
+}
+
+.price-secondary {
+  font-size: 25px;
+  align-self: center;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconStyles {
+  width: 70px;
+  height: 70px;
+}
+
+.priceIcon {
+  margin-bottom: 15px;
+}
+
+.smallContainer {
+  height: 0px;
+  border-top: 3px solid $gray-lighter;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .descriptionPlan {
+    padding: 35px 30px;
+
+    .includedBenefitsContainer {
+      font-size: $largemb;
+      ul {
+        all: unset;
+      }
+    }
+  }
+
+  .upgradenowMemberButton {
+    width: 90%;
+  }
+}
+
+.onboarding {
+  position: fixed;
+  top: 140px;
+  left: 2%;
+  z-index: 1;
+}
+
+.dividerHeading {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  &:after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid $gray-middle;
+    margin: auto;
+  }
+}

@@ -1,0 +1,74 @@
+@import '@/styles/override';
+
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
+  z-index: 1050;
+  font-size: $font16;
+  .navbar {
+    background: $white;
+    border-top: solid 3px $green;
+    border-bottom: solid 1px $silver;
+
+    .menu {
+      margin: 0 auto;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .navigate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+        height: 100%;
+
+        @media (max-width: 1024px) {
+          padding-right: 40px;
+        }
+
+        @media (max-width: $grid-breakpoint-md) {
+          justify-content: flex-start;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.logoContainer {
+  width: 205px;
+  text-align: center;
+
+  .logo {
+    width: auto;
+    height: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    width: auto;
+    margin-left: 20px;
+  }
+}
+
+.oldSiteButton {
+  background-color: $green;
+  font-weight: normal;
+  min-width: fit-content;
+  font-size: $xsmallmb;
+  letter-spacing: 0.4px;
+  color: $white;
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-left: 4px;
+  cursor: pointer;
+
+  @media (max-width: 820px) {
+    padding: 4px;
+    letter-spacing: 0px;
+  }
+}

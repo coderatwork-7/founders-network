@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px 20px;
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    grid-template-columns: 1fr;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}

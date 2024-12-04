@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.header {
+  border: 0;
+}
+
+.modalBody {
+  background-color: $azure;
+  font-size: $font14;
+  .close-btn {
+    right: 40px;
+    top: 40px;
+    .closeIcon {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.errorMessage {
+  text-align: center;
+  margin-top: 10px;
+  color: $warning;
+}
+
+.successMessage {
+  text-align: center;
+  margin-top: 10px;
+  color: $success;
+}

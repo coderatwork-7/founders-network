@@ -1,0 +1,46 @@
+@import '@/styles/override';
+
+.ribbon {
+  border-bottom: 1px solid $silver;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  top: 68px;
+  margin-bottom: 0;
+  font-size: $large;
+  background-color: $white;
+  z-index: 1;
+
+  span {
+    font-weight: bold;
+    color: $green;
+    margin: 0 4px;
+  }
+
+  &.bigRibbon {
+    height: 64px;
+  }
+
+  &.green {
+    padding: 10px;
+    background: $green;
+    font-size: $base;
+    letter-spacing: 0.8px;
+
+    a {
+      color: $white;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: $basemb;
+    }
+  }
+}
+
+.positionWithRibbon.positionWithRibbon.positionWithRibbon {
+  top: 132px;
+}

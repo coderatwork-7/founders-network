@@ -1,0 +1,22 @@
+@import '@/styles/override';
+.avatars {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.mainline {
+  font-size: $font16;
+  color: $gray-darkest;
+  line-height: 1.58;
+  margin-bottom: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .mainline {
+    font-size: 14px;
+  }
+}

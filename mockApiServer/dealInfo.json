@@ -1,0 +1,56 @@
+{
+  "_id": 319,
+  "can_access": true,
+  "company": {
+    "id": 123,
+    "rating": 2,
+    "name": "Close",
+    "site": "http://Close.io",
+    "logo": "https://fnprofileimages3.s3.amazonaws.com/production/hidden_company/6be95d53f5e917ab6789daad84f84681.png",
+    "description": "To redeem, sign up for your free trial here, then email sales@close.com and mention Founder's Network to receive your $300 subscription credit. You can request the credit in the form of a one-time, $300 credit on an annual subscription or as three, $100 credits on a month-to-month subscription.\r\nLimitations: New Close customers only. Only valid toward Close subscription fees. Call/SMS usage credit is not included. Credit is only valid for the first 3 months of service.\r\n\r\n\r\nPacked with productivity tools like task reminders and Power Dialer, you\u2019ll reach more leads, follow up more often, and close more deals. All in a single timeline for ultimate team transparency. Our built-in call coaching also helps sales leaders coach their reps to doubling performance, all within their CRM. Close is the only CRM focused solely on the needs of SMBs and scaling teams, and our customers will always feel fully supported. Start a free trial today.\r\n\r\n"
+  },
+  "value": 300,
+  "offer": "FREE 3 Months on Close Professional. 14-day trial, a free migration from any CRM, and a $300 credit toward your subscription\r\n\r\n\r\n",
+  "_userTotalRedeemed": 8,
+  "viewedCount": "",
+  "tags": [
+    {
+      "id": 34,
+      "name": "Software"
+    },
+    {
+      "id": 39,
+      "name": "CRM"
+    },
+    {
+      "id": 97,
+      "name": "Sales"
+    },
+    {
+      "id": 50,
+      "name": "SaaS"
+    },
+    {
+      "id": 286,
+      "name": "Email"
+    },
+    {
+      "id": 765,
+      "name": "VoIP"
+    },
+    {
+      "id": 768,
+      "name": "Sales Automation"
+    }
+  ],
+  "lifetime_access": true,
+  "userRating": 3,
+  "improve": {
+    "responseTime": true,
+    "description": false,
+    "service": true,
+    "value": false,
+    "other": true
+  },
+  "improveText": "This or that can be improved."
+}

@@ -1,0 +1,12 @@
+@import '@/styles/override';
+
+.layout {
+  max-width: 960px;
+  margin: auto;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .layout {
+    width: 95%;
+  }
+}

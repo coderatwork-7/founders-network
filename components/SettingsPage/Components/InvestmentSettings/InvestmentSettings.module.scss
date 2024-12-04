@@ -1,0 +1,12 @@
+@import '@/styles/override';
+
+.InvestmentSettings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $gray-darker;
+}

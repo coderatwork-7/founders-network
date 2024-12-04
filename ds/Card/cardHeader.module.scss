@@ -1,0 +1,39 @@
+@import '@/styles/override';
+
+.header {
+  color: $fn-primary-color;
+  font-weight: 100;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: $base;
+  position: relative;
+}
+
+.header a {
+  color: $blue-light;
+  text-decoration: none;
+}
+
+.dealHeaderStyles {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.forumHeaderStyles > span:last-child {
+  transform: translateY(calc(-50% + 10px));
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .header {
+    font-size: $basemb;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .header {
+    font-size: $smallmb;
+    width: 100%;
+  }
+}

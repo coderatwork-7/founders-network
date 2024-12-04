@@ -1,0 +1,18 @@
+@import '@/styles/override';
+
+.CompanyGeneralTab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > * {
+    border-bottom: 1px solid $gray-less-darker;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}

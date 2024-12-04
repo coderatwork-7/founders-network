@@ -1,0 +1,40 @@
+@import '@/styles/override';
+.RedeemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //justify-content: center;
+  padding: 20px 0px 20px 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  font-family: 'Lato-Regular', Arial, Helvetica;
+  box-shadow: 1px 1px 5px 0px #ccc;
+}
+
+.RedeemIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background: url(https://dzw3ti366o8p6.cloudfront.net/static/fnsite/assets/img/sprites/lock_blue.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 45%;
+  margin: -2px 4px 0 -20px;
+  position: static;
+}
+
+.RedeemText {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+.achcor {
+  color: #466cc3;
+  cursor: pointer;
+}

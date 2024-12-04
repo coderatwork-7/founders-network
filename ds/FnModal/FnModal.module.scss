@@ -1,0 +1,49 @@
+@import '@/styles/override';
+
+.FnModal {
+  min-width: 30rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  position: relative;
+  border-radius: 1rem;
+  position: fixed;
+  box-shadow: hsl(0 0% 0% / 10%) 0 0 0.5rem;
+
+  &::backdrop {
+    background: hsl(0 0% 0% / 50%);
+  }
+
+  header,
+  footer {
+    background-color: $bg-color;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.061) 0px 2px 3px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  align-self: center;
+}
+
+.closeButton {
+  background-color: unset;
+  border: none;
+  padding: 0.75rem;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modalContent {
+  padding: 1rem;
+}

@@ -1,0 +1,78 @@
+@import '@/styles/override';
+
+.modal {
+  max-width: 800px;
+}
+
+.modalTitle {
+  width: 100%;
+  font-size: $heading4;
+  color: $black;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modalBody {
+  padding: 20px 40px;
+}
+
+.content {
+  padding: 10px 20px;
+}
+
+.currentCard {
+  padding: 10px 20px;
+  border-left: 7px solid $gray;
+  border-radius: 5px;
+}
+
+.newCard {
+  cursor: pointer;
+  border-left: 7px solid $blue;
+  border-radius: 5px;
+}
+
+.downArrow {
+  width: 30px;
+  height: 50px;
+}
+
+.tick {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $gray;
+}
+
+.filledTick {
+  background-color: $green;
+}
+
+.attending {
+  border-left: 7px solid $green;
+}
+
+.dialin {
+  border-left: 7px solid $green-lightest;
+}
+
+.maybe {
+  border-left: 7px solid $fn-golden-tainoi-alpha;
+}
+
+.declined {
+  border-left: 7px solid $warning;
+}
+
+.invited {
+  border-left: 7px solid $pink-light;
+}
+
+.newReason {
+  width: 100%;
+  border: 1px solid $gray-brownish;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: 0;
+}

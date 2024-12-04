@@ -1,0 +1,1 @@
+export {SearchTypeahead} from './searchTypeahead';

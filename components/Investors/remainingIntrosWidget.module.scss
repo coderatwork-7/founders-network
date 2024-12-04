@@ -1,0 +1,39 @@
+@import '@/styles/override';
+
+.container {
+  text-align: center;
+  background-color: $white;
+  border-color: $container-border-opacity;
+
+  .btn {
+    width: 100%;
+    font-size: $base;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+  }
+
+  .info {
+    border-bottom: 1px solid $container-border-opacity;
+    padding: 16px 16px 10px;
+
+    .label {
+      font-size: $small;
+      letter-spacing: 0.8px;
+      color: $fn-secondary-color;
+    }
+
+    .value {
+      font-size: $heading5bold;
+      line-height: 24px;
+      color: $black;
+      margin-top: 4px;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  left: calc(100% + 4px);
+  bottom: 0;
+  display: flex;
+}

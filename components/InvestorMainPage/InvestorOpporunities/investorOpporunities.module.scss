@@ -1,0 +1,21 @@
+@import '@/styles/override';
+
+.leftContainer {
+  flex-basis: 25%;
+}
+
+.centerContainer {
+  flex-basis: 75%;
+}
+
+.headerContainer {
+  width: 60%;
+  margin: 0 auto 20px;
+  color: $gray;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .headerContainer {
+    width: 80%;
+  }
+}

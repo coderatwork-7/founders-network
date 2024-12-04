@@ -1,0 +1,14 @@
+@import '@/styles/override';
+
+.disclaimer {
+  text-align: right;
+  margin: 10px 5%;
+  padding-top: 10px;
+  color: $gray;
+  font-size: $font14;
+  border-top: 1px solid $gray-lighter;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+}

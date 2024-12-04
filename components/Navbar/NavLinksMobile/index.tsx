@@ -1,0 +1,1 @@
+export {NavLinksMobile} from './navLinksMobile';

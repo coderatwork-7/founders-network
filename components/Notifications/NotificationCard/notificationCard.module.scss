@@ -1,0 +1,76 @@
+@import '@/styles/override';
+
+.card {
+  position: relative;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background-color: $bg-mint-green;
+  padding: 4px 8px;
+  border-bottom: 1px solid $gray-more-light;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &.read {
+    background-color: $white;
+  }
+
+  .notifText {
+    color: $gray-dark;
+    margin: 10px 25px 10px 5px;
+    line-height: 18px;
+    font-size: $font14;
+    letter-spacing: 0.2px;
+
+    b {
+      color: $gray-darkest;
+      font-weight: 500;
+    }
+
+    .notifTime {
+      color: $gray-middle;
+    }
+  }
+
+  .iconContainer {
+    min-width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    // TODO: replace with New Avatar
+    :global(.avatarImgContainer) {
+      border-radius: 50%;
+      scale: 1.1;
+    }
+  }
+
+  .closeBtn {
+    min-width: 25px;
+    font-size: $font10;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.spinnerOverlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(0.8px);
+  font-size: $font12;
+  color: $fn-primary-color;
+  cursor: default;
+  z-index: 1;
+}

@@ -1,0 +1,73 @@
+@import '@/styles/override';
+
+.companyLogo {
+  width: 100px;
+  height: auto;
+}
+
+.cardContainer {
+  padding: 10px;
+  display: flex;
+  .profileContainer {
+    flex-basis: 20%;
+  }
+  .infoContainer {
+    flex-basis: 80%;
+    text-align: start;
+
+    .companyInfo {
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+    }
+  }
+}
+
+.userName {
+  color: $blue;
+}
+
+.statsContainer {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.statsTag {
+  display: flex;
+  .title {
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    .profileContainer {
+      .imageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+    .infoContainer {
+      text-align: start;
+
+      .companyInfo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  .statsTag {
+    display: block;
+    overflow: hidden;
+  }
+  .companyLogo {
+    width: 150px;
+  }
+}

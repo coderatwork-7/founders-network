@@ -1,0 +1,33 @@
+@import '@/styles/override';
+.onboardingTooltipContainer {
+  color: inherit;
+  position: absolute;
+}
+
+.tooltipContainer {
+  position: absolute;
+  width: 300px;
+  left: 230px;
+  height: auto;
+  border: 1px solid black;
+  background-color: rgb(196, 26, 26) !important;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+  font-weight: 100;
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    content: '';
+    top: 15px;
+    right: 50%;
+    transform: rotate(45deg) !important;
+    margin-right: -90px;
+    background-color: white;
+  }
+}

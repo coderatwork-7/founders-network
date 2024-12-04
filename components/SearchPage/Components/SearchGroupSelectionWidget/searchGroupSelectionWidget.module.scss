@@ -1,0 +1,53 @@
+@import '@/styles/override';
+
+@mixin colorCode($class) {
+  $color: map-get($feedColorMap, $class);
+
+  &.#{$class} {
+    &::before {
+      background-color: $color;
+    }
+
+    &.active {
+      background-color: rgba($color, 0.25);
+      color: $gray-darkest;
+    }
+  }
+}
+
+.container {
+  text-align: left;
+  color: $gray-dark;
+  border: 1px solid transparent;
+}
+
+.groupLabel {
+  padding: 10px 16px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: $small;
+  letter-spacing: 0.8px;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    background-color: rgba($gray-less-light, 0.25);
+  }
+
+  @include colorCode(library);
+  @include colorCode(forums);
+  @include colorCode(functions);
+  @include colorCode(members);
+  @include colorCode(groups);
+  @include colorCode(deals);
+  @include colorCode(investors);
+  @include colorCode(partners);
+}

@@ -1,0 +1,1 @@
+export {NominateInfo} from './nominateInfo';

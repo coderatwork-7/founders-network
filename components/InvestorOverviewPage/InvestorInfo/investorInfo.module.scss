@@ -1,0 +1,53 @@
+@import '@/styles/override';
+
+.infoContainer {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  .contentContainer {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.sideInvestContainer {
+  flex: 0 0 350px;
+  margin-top: 20px;
+}
+
+.investInfoContainer {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.infoHeader {
+  text-transform: uppercase;
+  color: $black-ligther;
+  margin: 0;
+}
+
+.match {
+  height: 40px;
+  width: 100px;
+  color: $white;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-teal-light;
+}
+
+.warning {
+  background-color: $warning;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .infoContainer {
+    max-width: 90%;
+    flex-direction: column;
+    padding-inline: 0 auto;
+  }
+}

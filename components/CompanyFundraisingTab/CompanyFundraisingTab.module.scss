@@ -1,0 +1,11 @@
+@import '@/styles/override';
+
+.CompanyFundraisingTab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > * {
+    border-bottom: 1px solid $gray-less-darker;
+  }
+}

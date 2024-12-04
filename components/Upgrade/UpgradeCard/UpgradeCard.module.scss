@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.upgradeCard {
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px 1px $gray-lighter;
+  border-left: 6px solid transparent;
+  margin: 12px 0;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+
+  &:hover,
+  &:visited {
+    color: inherit;
+  }
+
+  b {
+    font-weight: normal;
+    color: $black;
+  }
+
+  &.angel {
+    border-color: $angel;
+  }
+  &.seriesA {
+    border-color: $series-a;
+  }
+  &.lifetime {
+    border-color: $lifetime;
+  }
+}

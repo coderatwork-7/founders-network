@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.keyword {
+  background-color: $gray-90;
+  .crossBtn {
+    height: 3px;
+    width: 3px;
+    padding: 4px;
+  }
+}
+
+.keyword button {
+  cursor: pointer;
+  color: $primary;
+}

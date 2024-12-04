@@ -1,0 +1,9 @@
+@import '@/styles/override';
+
+.messageContainer {
+  svg {
+    font-size: $font20;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+}

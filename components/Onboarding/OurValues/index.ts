@@ -1,0 +1,1 @@
+export {OurValues} from './ourValues';

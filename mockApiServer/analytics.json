@@ -1,0 +1,16 @@
+{
+  "like": {
+    "count": 1,
+    "liked": true,
+    "profile": [
+      {
+        "id": 5631,
+        "name": "Dusan Zamahajev"
+      }
+    ]
+  },
+  "analytics": {
+    "comment": 3,
+    "privateComment": 1
+  }
+}

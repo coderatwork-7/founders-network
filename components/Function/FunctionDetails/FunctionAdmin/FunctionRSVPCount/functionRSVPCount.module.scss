@@ -1,0 +1,50 @@
+@import '@/styles/override';
+
+.cardContainer {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: $blue-lightest;
+  border-radius: 5px 0 0 5px;
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 0;
+  text-align: left;
+}
+
+.listingCard {
+  padding: 15px 10px;
+  border-left: solid 7px $blue;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  .listingName {
+    flex: 2 2 0;
+  }
+}
+
+.arrowIcon {
+  margin-left: 5px;
+}
+
+.addIcon {
+  cursor: pointer;
+}
+
+.membersAttending,
+.membersDialingIn {
+  border-left: 7px solid $green-lightest;
+}
+
+.guestsAttending,
+.guestsDialin {
+  border-left: 7px solid $fn-golden-tainoi-alpha;
+}
+
+.declined {
+  border-left: 7px solid $warning;
+}
+
+.invited {
+  border-left: 7px solid $pink-light;
+}

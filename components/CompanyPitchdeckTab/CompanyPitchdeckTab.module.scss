@@ -1,0 +1,24 @@
+@import '@/styles/override';
+
+.CompanyPitchdeckTab {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  embed {
+    height: 700px;
+    object-position: 50% 50%;
+  }
+  button {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}

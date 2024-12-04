@@ -1,0 +1,1 @@
+export {NominatePage} from './nominatePage';

@@ -1,0 +1,76 @@
+@import '@/styles/override';
+
+.navbarContainer {
+  position: fixed;
+  top: 50%;
+  left: 60px;
+  transform: translate(0, -50%);
+  text-align: start;
+  z-index: 3;
+
+  .navbar {
+    .navbarList {
+      cursor: pointer;
+
+      &::marker {
+        color: $fn-standard-green;
+        font-weight: bold;
+        font-size: $heading5;
+      }
+    }
+  }
+}
+
+.linkBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 25px;
+  .content {
+    display: none;
+    &.active {
+      display: block;
+      width: 75px;
+    }
+  }
+  &:hover,
+  &.linkBoxActive {
+    background: $white;
+    border-radius: 6px;
+    padding: 2px 7px;
+    transform: translate(-10px, 0px);
+    box-shadow: 0px 0px 2px 0px $silver;
+    .listDot {
+      width: 14px;
+      height: 14px;
+      background-color: $fn-light-green;
+    }
+    .content {
+      display: block;
+      color: $fn-light-green;
+    }
+  }
+}
+
+.listDot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.navbarList:hover {
+  .linkBox {
+    .listDot {
+      background-color: $green;
+    }
+    .content {
+      color: $green;
+    }
+  }
+  .linkBoxActive {
+    .listDot {
+      background-color: $fn-light-green;
+    }
+  }
+}

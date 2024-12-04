@@ -1,0 +1,11 @@
+@import '@/styles/override';
+
+.welcomeContainer {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  .welcomeText {
+    font-size: $heading1bold;
+    margin-bottom: 20px;
+  }
+}

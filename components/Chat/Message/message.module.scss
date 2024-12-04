@@ -1,0 +1,112 @@
+@import '@/styles/override';
+
+.message {
+  position: relative;
+  color: $black;
+  font-size: $font16;
+  margin: 20px;
+  width: fit-content;
+  max-width: 40%;
+  border: 1px solid $gray-more-light;
+  border-radius: 10px;
+  background-color: $white;
+  word-break: break-word;
+
+  .time {
+    font-size: $font14;
+    color: $gray;
+    width: max-content;
+    margin: 4px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  &.sent {
+    background-color: $bg-teal-light;
+    color: $white;
+    align-self: flex-end;
+
+    .time {
+      right: 0;
+      left: unset;
+    }
+
+    .msgText img {
+      border-color: $gray;
+    }
+
+    .fileButton {
+      background-color: $white;
+      border-color: transparent;
+    }
+  }
+
+  .sending {
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-xxl) {
+    max-width: 45%;
+  }
+  @media only screen and (max-width: $grid-breakpoint-xl) {
+    max-width: 55%;
+  }
+  @media only screen and (max-width: $grid-breakpoint-lg) {
+    max-width: 65%;
+  }
+}
+
+.msgText {
+  margin: max(5%, 10px) 15px;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+
+  p {
+    margin: 5px;
+  }
+
+  img {
+    display: block;
+    max-width: 80%;
+    max-height: 300px;
+    border: 1px solid $gray-more-light;
+    margin: 20px 5px;
+  }
+
+  ul,
+  ol {
+    list-style: disc;
+    margin: 20px 20px 20px 30px;
+  }
+  ol {
+    list-style: decimal;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    font-size: $font14;
+    letter-spacing: 0.4px;
+    word-spacing: 1.5px;
+  }
+}
+
+.fileButton {
+  color: $black;
+  display: inline-flex;
+  gap: 10px;
+  font-size: $font13;
+  border: none;
+  background-color: $gray-90;
+  padding: 8px 18px;
+  margin: 12px 4px 4px 0;
+  cursor: pointer;
+  border-radius: 16px;
+  max-width: 95%;
+
+  &:hover {
+    text-decoration: underline;
+    color: $black;
+  }
+}

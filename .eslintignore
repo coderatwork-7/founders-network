@@ -1,0 +1,12 @@
+.next
+next-env.d.ts
+node_modules
+yarn.lock
+package-lock.json
+public
+*.tsx
+genericApi/foundersNetwork/likeAPI/index.ts
+mockApiServer
+components/Intro/helper.ts
+utils/common/helper.ts
+**/blueprint-templates

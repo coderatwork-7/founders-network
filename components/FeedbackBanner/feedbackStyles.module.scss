@@ -1,0 +1,210 @@
+@import '@/styles/override';
+
+.modal {
+  max-width: 800px;
+  padding: 0 40px;
+
+  .content {
+    margin: auto;
+    height: calc(100vh - 100px);
+    min-height: 250px;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 576px) {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+
+    .content {
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+  }
+}
+
+.modalTitle {
+  width: 100%;
+  font-size: $heading4;
+  color: $black;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  padding-left: 30px;
+
+  @media (max-width: 360px) {
+    font-size: $heading6;
+    letter-spacing: 0.4px;
+    padding-left: 0px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+
+  .btn {
+    font-size: $small;
+    letter-spacing: 0.8px;
+    min-height: 40px;
+  }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    gap: 10px;
+
+    .btn {
+      font-size: $smallmb;
+      min-height: 30px;
+    }
+  }
+}
+
+.header,
+.footer {
+  flex: 0 0 0;
+  padding: 16px;
+
+  @media (max-width: 360px) {
+    padding: 6px;
+  }
+}
+
+.formContainer {
+  flex: 1 1 0;
+  overflow: auto;
+  background-color: $bg-color;
+}
+
+.form {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.formGroup {
+  flex: 0 0 50%;
+  margin: 15px 0 10px;
+  font-size: $small;
+
+  &.comments {
+    flex: 0 0 100%;
+  }
+
+  @media (max-width: $grid-breakpoint-md) {
+    flex: 0 0 50%;
+  }
+
+  @media (max-width: 420px) {
+    flex: 0 0 100%;
+  }
+
+  .question {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.8px;
+    font-size: $large;
+
+    @media (max-width: $grid-breakpoint-md) {
+      font-size: $basemb;
+    }
+  }
+
+  .optionGroup {
+    width: fit-content;
+    margin: auto;
+
+    .ratingText {
+      font-size: $xsmallmb;
+      text-align: center;
+      color: $gray;
+      height: 30px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.commentBox {
+  display: block;
+  min-height: 100px;
+  max-height: 160px;
+  outline: none;
+  padding: 10px 15px;
+  font-size: $base;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  border-radius: 4px;
+  width: 85%;
+  margin: 5px auto 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.uploadBtn {
+  display: block;
+  width: 85%;
+  margin: 0 auto 20px;
+  background-color: $blue;
+  border: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: $white;
+  padding: 6px 10px;
+  letter-spacing: 0.6px;
+  font-size: $small;
+  cursor: pointer;
+
+  &.removeBtn {
+    background-color: $gray-middle;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  @media (max-width: 576px) {
+    font-size: $xsmallmb;
+  }
+}
+
+.banner {
+  font-size: $small;
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 1em;
+  box-sizing: content-box;
+  word-break: break-all;
+  font-weight: bold;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 1px 8px 8px 1px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $bg-tan;
+  box-shadow: 1px 1px 2px 0px $black;
+  text-shadow: 1px 1px $black;
+  z-index: 2;
+  line-height: 22px;
+
+  &:hover {
+    background-color: $bg-tan-light;
+    text-shadow: 1px 1px 2px $black;
+  }
+
+  @media (max-width: 480px) {
+    line-height: 11px;
+    padding: 10px 4px;
+    font-size: 8px;
+  }
+}

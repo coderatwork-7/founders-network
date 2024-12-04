@@ -1,0 +1,46 @@
+@import '@/styles/override';
+
+.ReviewAndConfirm {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  h2 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 0.5rem;
+    font-weight: 100;
+  }
+}
+
+.billingInfo {
+  margin: 1rem 0;
+}
+
+.billingCheckbox {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.billingPeriodInfo {
+  min-height: 60px;
+}
+
+.paymentPlan {
+}
+
+.paymentPlanDescription {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.inputRow {
+  display: flex;
+}
+
+.redColor {
+  color: red;
+}

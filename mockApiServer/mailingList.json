@@ -1,0 +1,547 @@
+[
+  {
+    "id": 0,
+    "name": "June'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 1,
+    "name": "Members List",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 2,
+    "name": "July'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 3,
+    "name": "January'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 4,
+    "name": "May'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 5,
+    "name": "August'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 6,
+    "name": "April'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 7,
+    "name": "September'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 8,
+    "name": "March'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 9,
+    "name": "February'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 10,
+    "name": "May'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 11,
+    "name": "February'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 12,
+    "name": "March'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 13,
+    "name": "May'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 14,
+    "name": "June'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 15,
+    "name": "Vancouver Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 16,
+    "name": "New York City Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 17,
+    "name": "São Paulo Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 18,
+    "name": "Virtual Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 19,
+    "name": "Mexico City Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 20,
+    "name": "July'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 21,
+    "name": "April'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 22,
+    "name": "San Diego",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 23,
+    "name": "June'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 24,
+    "name": "July'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 25,
+    "name": "October'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 26,
+    "name": "July'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 27,
+    "name": "August'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 28,
+    "name": "September'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 29,
+    "name": "January'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 30,
+    "name": "Real Estate Founders",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 31,
+    "name": "Staff",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 32,
+    "name": "Series A+ Roundtable Group 4",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 33,
+    "name": "November'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 34,
+    "name": "SXSW 2018",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 35,
+    "name": "December'21 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 36,
+    "name": "January'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 37,
+    "name": "February'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 38,
+    "name": "April'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 39,
+    "name": "Tel Aviv Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 40,
+    "name": "Austin Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 41,
+    "name": "London Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 42,
+    "name": "LatAm Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 43,
+    "name": "Angel Stage Group",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 44,
+    "name": "December'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 45,
+    "name": "March'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 46,
+    "name": "November'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 47,
+    "name": "FN Syndicate",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 48,
+    "name": "October'20 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 49,
+    "name": "Silicon Valley Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 50,
+    "name": "October'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 51,
+    "name": "November'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 52,
+    "name": "Health Sector Initiative",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 53,
+    "name": "December'22 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 54,
+    "name": "January'23 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 55,
+    "name": "February'23 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 56,
+    "name": "March'23 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 57,
+    "name": "Dallas Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 58,
+    "name": "fnContributors",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 59,
+    "name": "April'23 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 60,
+    "name": "Toronto Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 61,
+    "name": "Berlin Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 62,
+    "name": "Bengaluru Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 63,
+    "name": "Bogota Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 64,
+    "name": "Funded Founders Forum",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 65,
+    "name": "Denver Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 66,
+    "name": "May'23 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 67,
+    "name": "Sydney Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 68,
+    "name": "Paris Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 69,
+    "name": "Hong Kong Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 70,
+    "name": "Boston Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 71,
+    "name": "Atlanta Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 72,
+    "name": "Lima Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 73,
+    "name": "Buenos Aires Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 74,
+    "name": "November'18 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 75,
+    "name": "December'18 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 76,
+    "name": "January'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 77,
+    "name": "QA Testing",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 78,
+    "name": "SXSW 2019",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 79,
+    "name": "March'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 80,
+    "name": "February'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 81,
+    "name": "Sao Paulo Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 82,
+    "name": "Lead Mentors",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 83,
+    "name": "Seattle Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 84,
+    "name": "Los Angeles Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 85,
+    "name": "Singapore Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 86,
+    "name": "Chicago Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 87,
+    "name": "April'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 88,
+    "name": "June'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 89,
+    "name": "May'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 90,
+    "name": "August'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 91,
+    "name": "Tokyo Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 92,
+    "name": "November'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 93,
+    "name": "October'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 94,
+    "name": "September'19 Cohort",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 95,
+    "name": "Washington DC Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 96,
+    "name": "The Bootstrap SF Peer Advisory Board",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 97,
+    "name": "San Francisco Chapter",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 98,
+    "name": "Women Founders",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 99,
+    "name": "DevOps Initiative",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 100,
+    "name": "Funded Founder SF Peer Advisory Board",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 101,
+    "name": "test",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 102,
+    "name": "Series A+ Roundtable Group 5",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 103,
+    "name": "Series A+ Roundtable Group 3",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 104,
+    "name": "Series A+ Roundtable Group 2",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 105,
+    "name": "Black Founders",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 106,
+    "name": "Series A+ Roundtable Group 1",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 107,
+    "name": "Global Chairs Group",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  },
+  {
+    "id": 108,
+    "name": "Series-A+ and Lifetime Stage Group",
+    "emailId": "members@foundersnetwork.mailgun.org"
+  }
+]

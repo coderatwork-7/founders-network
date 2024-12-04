@@ -1,0 +1,23 @@
+@import '@/styles/override';
+.selected,
+.unSelected {
+  border-radius: 50%;
+  // For radio under flex container: flex re-defines nature of width
+  max-height: 12px;
+  min-height: 12px;
+  height: 12px;
+  max-width: 12px;
+  min-width: 12px;
+  width: 12px;
+  //
+  border-radius: 50%;
+  border: 1px solid $green;
+}
+
+.selected {
+  background-color: $green;
+}
+
+.smallText {
+  font-size: $font14;
+}

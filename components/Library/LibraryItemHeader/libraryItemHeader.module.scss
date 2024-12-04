@@ -1,0 +1,68 @@
+@import '@/styles/override';
+
+.header {
+  display: flex;
+  color: $gray-dark;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  .previousPageLink {
+    gap: 10px;
+    display: flex;
+    color: inherit;
+    align-items: center;
+    font-size: $heading6;
+    letter-spacing: 0.4px;
+
+    svg {
+      color: $blue;
+      font-size: $heading4;
+    }
+
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        color: $gray-darkest;
+      }
+    }
+  }
+
+  .iconContainer {
+    gap: 4px;
+    display: flex;
+
+    .cardIcon {
+      z-index: 1;
+      all: unset;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: $heading6;
+
+      @media (hover: hover) {
+        &:hover,
+        &:focus-visible {
+          transform: scale(1.1);
+          color: $gray-lightest;
+          transition: transform 0.3s;
+          background-color: $gray-darkest;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    width: 90%;
+    margin: 0 auto 10px;
+
+    .previousPageLink {
+      font-size: $largemb;
+
+      svg {
+        font-size: $heading4mb;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '@/styles/override';
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;
+  position: relative;
+
+  @media only screen and (max-height: 400px) {
+    overflow-y: auto;
+  }
+
+  .iconBack {
+    display: none;
+  }
+
+  overflow: hidden;
+  .chatHeader {
+    display: flex;
+    align-items: center;
+    flex: 0 0 80px;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    display: none;
+    &.show {
+      display: flex;
+    }
+
+    .iconBack {
+      display: inline-block;
+    }
+
+    .chatHeader {
+      padding: 5px 20px;
+      flex: 0 0 65px;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}
+
+.messageListContainer {
+  overflow: hidden;
+  background-color: $bg-alice-blue;
+  width: calc(100% - 60px);
+  margin: 0 auto 25px auto;
+  flex: 1 1 auto;
+  min-height: 60px;
+  overflow-y: auto;
+  position: relative;
+
+  :global(.progress) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    --bs-progress-height: 10px;
+    opacity: 0.8;
+  }
+}

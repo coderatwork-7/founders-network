@@ -1,0 +1,46 @@
+@import '@/styles/override';
+
+.popover {
+  width: 500px;
+  max-width: 96vw;
+}
+
+.messageListContainer {
+  padding: 1rem;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: inherit;
+
+  .list {
+    max-height: 70vh;
+    overflow-y: auto;
+    border-top: 1px solid $gray-more-light;
+  }
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  color: $fn-primary-color;
+}
+/* notifications.module.scss */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}

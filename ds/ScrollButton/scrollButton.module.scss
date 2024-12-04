@@ -1,0 +1,30 @@
+@import '@/styles/override';
+
+.scrollButton {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blue-light;
+  background-color: $white;
+  border: 1px solid $blue-light;
+  border-radius: 5px;
+  cursor: pointer;
+
+  .iconStyles {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:active,
+  &:disabled {
+    color: $white;
+    background-color: $blue-light;
+  }
+}

@@ -1,0 +1,12 @@
+@import '@/styles/override';
+
+.upgrade {
+  font-size: $font14;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+  color: $gray-dark;
+
+  & > a {
+    background-color: $white;
+  }
+}

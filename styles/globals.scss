@@ -1,0 +1,448 @@
+@import 'normalize.css';
+@import '~bootstrap/scss/bootstrap';
+@import './override';
+@import '~react-datepicker/src/stylesheets/datepicker';
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../public/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+  width: 100%;
+  font-size: $font16;
+  color: $gray-darkest;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  &.mainBodyContainer {
+    background-color: $bg-color;
+  }
+
+  a,
+  a:hover {
+    text-decoration: none;
+    color: $blue-light;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pageLayout {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 90px auto 0 auto;
+    padding: 0;
+    position: relative;
+
+    &.pageWithRibbon {
+      margin: 132px auto 0 auto;
+    }
+
+    .leftContainer {
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .centerContainer {
+      margin: 0 auto;
+      max-width: 960px;
+    }
+
+    .leftContainerFixedPostion {
+      position: fixed;
+      top: 92px;
+      z-index: 1;
+    }
+
+    .rightContainer {
+      width: 700px;
+    }
+
+    .rightContainerFixedPostion {
+      position: relative;
+      left: 250px;
+    }
+  }
+
+  .btn-close:focus {
+    box-shadow: none;
+  }
+}
+
+.container-border {
+  border: 1px solid $gray-90;
+  border-radius: 8px;
+}
+
+.container-box-shadow {
+  box-shadow: -8px 8px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.horizontalDisplayer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cardTitleText {
+  color: $fn-secondary-color;
+  font-size: $font15;
+}
+
+@media only screen and (max-width: $grid-breakpoint-lg) {
+  body {
+    .pageLayout {
+      width: 810px;
+
+      .rightContainer {
+        width: 620px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  body {
+    .pageLayout {
+      display: block;
+      width: 100%;
+      padding: 0.7rem;
+      margin: auto;
+      position: relative;
+      top: 80px;
+
+      &.pageWithRibbon {
+        top: 132px;
+        margin: auto;
+      }
+
+      .centerContainer {
+        width: 100%;
+      }
+
+      .leftContainer {
+        width: 100%;
+      }
+
+      .rightContainer {
+        width: 100%;
+      }
+    }
+  }
+
+  .cardTitleText {
+    font-size: $font14;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .cardTitleText {
+    font-size: $font12;
+  }
+}
+
+.modal-body {
+  .tox-tinymce {
+    border: 1px solid $gray-lighter !important;
+    border-radius: 0 0 5px 5px !important;
+    width: 100% !important;
+    background-color: $white;
+  }
+
+  .tox:not(.tox-tinymce-inline).tox-tinymce--toolbar-bottom .tox-editor-header {
+    border: 1px solid $gray-lighter;
+    width: 95%;
+    margin: 0 0 10px 50%;
+    transform: translateX(-50%);
+
+    .tox-toolbar-overlord {
+      padding: 0 1px;
+    }
+  }
+}
+
+.tox-dialog-wrap__backdrop {
+  background-color: $black !important;
+  opacity: 0.5 !important;
+}
+
+// React-DatePicker CSS override
+.globalDatePicker {
+  .react-datepicker__today-button {
+    background-color: $white;
+    border: 0;
+    padding: 0;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .react-datepicker__header {
+    background-color: $white;
+    border: none;
+  }
+
+  .react-datepicker__day--today {
+    border: none;
+  }
+
+  .react-datepicker__month-container,
+  .react-datepicker__children-container,
+  .react-datepicker__day-names,
+  .react-datepicker__month,
+  .react-datepicker__header,
+  .react-datepicker__week {
+    width: 100%;
+  }
+
+  .react-datepicker__week,
+  .react-datepicker__day-names {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+  }
+
+  .react-datepicker__day-name {
+    color: $middle-blue-green;
+  }
+
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--keyboard-selected:hover {
+    background-color: transparent;
+  }
+
+  .react-datepicker__children-container {
+    margin: 0;
+  }
+
+  .react-datepicker__month {
+    margin: 0;
+  }
+
+  .react-datepicker__day,
+  .react-datepicker__day-name {
+    width: 75%;
+  }
+
+  .react-datepicker__day--selected,
+  .react-datepicker__day--selected:hover {
+    background-color: $white;
+    color: $green;
+    border: 1px solid $gray-87;
+    border-radius: 3px;
+  }
+
+  .react-datepicker__day--no-event {
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+.formDatePicker {
+  .react-datepicker {
+    overflow: hidden;
+  }
+
+  &[data-placement^='bottom'] {
+    padding-top: 5px !important;
+  }
+
+  &[data-placement^='top'] {
+    padding-bottom: 0px !important;
+  }
+
+  .react-datepicker__header--time {
+    display: none;
+  }
+
+  .react-datepicker__day {
+    &:hover {
+      scale: 1.15;
+      background-color: $gray;
+      color: $white;
+    }
+
+    &--keyboard-selected,
+    &--selected {
+      background-color: $green;
+      color: $white;
+      text-shadow: 0 0 1px $black;
+    }
+  }
+
+  .react-datepicker__time-list-item--selected {
+    text-shadow: 0 0 1px $black !important;
+    font-weight: normal !important;
+    background-color: $green !important;
+  }
+
+  .react-datepicker__time-list-item {
+    &:hover {
+      background-color: $gray !important;
+      color: $white;
+    }
+  }
+
+  .react-datepicker__current-month {
+    margin-top: -5px;
+    font-size: $small;
+  }
+
+  .react-datepicker__navigation--next--with-time:not(
+      .react-datepicker__navigation--next--with-today-button
+    ) {
+    right: 90px !important;
+  }
+
+  .react-datepicker__time-container,
+  .react-datepicker__time-box {
+    width: 90px !important;
+  }
+}
+
+.newDesignBorder {
+  border: 1px solid $gray-90;
+  border-radius: 4px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.overrideDefault * {
+  all: revert;
+}
+
+.linkText {
+  color: $blue-light;
+  font-size: $small;
+}
+
+.navLinkDisabled {
+  display: none;
+  color: $gray-more-light !important;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+@mixin lineClamp($lines) {
+  display: none;
+  @supports (-webkit-line-clamp: #{$lines}) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: #{$lines};
+    -webkit-box-orient: vertical;
+  }
+}
+.restrict1Line {
+  @include lineClamp(1);
+}
+
+.restrict2Lines {
+  @include lineClamp(2);
+}
+
+.restrict3Lines {
+  @include lineClamp(3);
+}
+
+.restrict6Lines {
+  @include lineClamp(6);
+}
+
+.textXSmall {
+  font-size: $xsmall;
+}
+
+.textSmall {
+  font-size: $small;
+}
+
+.textMedium {
+  font-size: $base;
+}
+
+.textLarge {
+  font-size: $large;
+}
+
+.fullWidthPage {
+  position: relative;
+  top: 65px;
+  background-color: $white;
+  min-height: calc(100vh - 65px);
+}
+:root {
+  --toastify-icon-color-info: $green !important;
+  --toastify-icon-color-success: $green !important;
+  --toastify-icon-color-warning: $green !important;
+  --toastify-icon-color-error: $fn-light-salom !important;
+  --toastify-font-family: 'Lato', sans-serif;
+}
+.Toastify__toast--success {
+  background-color: $green !important;
+  .Toastify__toast-icon {
+    fill: $white !important;
+  }
+}
+
+.Toastify__toast--error {
+  background-color: $white !important;
+  .Toastify__toast-icon {
+    fill: $fn-light-salom !important;
+  }
+  .Toastify__toast-body {
+    color: $fn-light-salom !important;
+  }
+  .Toastify__close-button {
+    color: $gray-lighter !important;
+  }
+}
+
+.Toastify__progress-bar--success,
+.Toastify__progress-bar--warning,
+.Toastify__progress-bar--error {
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  background: $gray-lighter !important;
+}
+
+.chatPopupScrollBar {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-darker;
+    border-radius: 6px;
+    border: none;
+  }
+}

@@ -1,0 +1,140 @@
+@import '@/styles/override';
+
+.popupContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  padding: 0 10px;
+  gap: 20px;
+  z-index: 100;
+  overflow: visible;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.popup {
+  pointer-events: auto;
+  flex: 0 0 270px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+  background: $white;
+  transform: translateY(100%) translateY(-50px);
+  transition: all 0.2s ease-out;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: rgba($color: $fn-secondary-color, $alpha: 0.3) 0px 0px 0px 1px,
+    rgba($color: $black, $alpha: 0.3) 0px 4px 4px 0px;
+
+  &.isMsgPopup {
+    flex: 0 0 240px;
+    height: 450px;
+    max-height: calc(100vh - 120px);
+  }
+
+  &.expanded {
+    transform: translateY(0);
+
+    &.isMsgPopup {
+      flex: 0 0 350px;
+    }
+  }
+
+  &.isSearch {
+    flex: 0 0 250px;
+  }
+}
+
+.popupHeader {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  width: 100%;
+  flex: 0 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba($color: $fn-secondary-color, $alpha: 0.3);
+  background-color: $white;
+
+  &:hover {
+    background-color: $gray-snow;
+    background-color: $azure;
+  }
+}
+
+.popupImg {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 36px;
+  width: 36px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.popupHeaderInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  letter-spacing: 0.6px;
+  line-height: 1;
+  gap: 2px;
+
+  .heading {
+    font-weight: bold;
+    font-size: $small;
+  }
+  .subHeading {
+    font-size: $xsmall;
+    letter-spacing: 0.4px;
+    color: $gray;
+  }
+}
+
+.popupHeaderBtns {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  color: $gray-dark;
+}
+
+.popupHeaderBtn {
+  all: unset;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  line-height: 1;
+  padding: 8px;
+
+  svg {
+    height: 18px;
+    width: 18px;
+  }
+
+  &:hover,
+  &.active {
+    background-color: $gray-90;
+  }
+}
+
+.popupBody {
+  flex: 1 0 0;
+  position: relative;
+  min-height: 0;
+}
+
+.popupFooter {
+  border-top: 1px solid rgba($color: $fn-secondary-color, $alpha: 0.3);
+}

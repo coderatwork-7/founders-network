@@ -1,0 +1,75 @@
+@import '@/styles/override';
+
+.listingCard {
+  border-left: solid 7px #97add9;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  align-items: center;
+  .listingName {
+    flex: 2 2 0;
+    padding: 10px 15px;
+  }
+}
+
+.leftPanel {
+  flex: 2 2 0;
+}
+
+.rightPanel {
+  flex: 6 6 0;
+}
+
+.dropdown {
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 5px 0;
+}
+
+.list {
+  flex: 2 2 0;
+}
+
+.partnerContainer {
+  width: 60%;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  gap: 10px;
+}
+
+.notSelected {
+  color: $gray;
+}
+
+.include {
+  padding: 4px 9px;
+  border: 1px solid $gray-lighter;
+  cursor: pointer;
+  border-radius: 2px;
+  &:active,
+  &:hover {
+    border-color: $blue;
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.includeActive {
+  border-color: $blue;
+  background-color: $blue;
+  color: $white;
+}
+
+.sendMail {
+  margin-left: 15px;
+  padding: 10px 15px;
+  outline: 0;
+  border: 1px solid $gray-lighter;
+  width: 30%;
+}
+
+.sendTest {
+  color: $teak;
+}

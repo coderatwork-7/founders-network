@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.cardContainer {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  text-align: start;
+  font-size: $small;
+
+  .dateTimeContainer {
+    flex-basis: 40%;
+  }
+  h3 {
+    font-size: $heading6bold;
+  }
+}
+
+.mapLink {
+  color: $blue;
+  cursor: pointer;
+}
+
+.descriptionHTML {
+  iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}

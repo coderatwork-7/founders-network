@@ -1,0 +1,76 @@
+@import '@/styles/override';
+
+.container.container {
+  width: 220px;
+  height: 310px;
+  overflow: hidden;
+}
+.bgDark.bgDark {
+  background-color: rgb($gray-90, 0.06);
+}
+.featuredHeight {
+  height: 10px;
+  line-height: 10px;
+  font-size: 10px;
+}
+.featuredText {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background-color: $fn-light-salom-alpha;
+  color: $white;
+}
+.banner {
+  height: 100px;
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 80px;
+  }
+}
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 60px;
+  line-height: 20px;
+  color: $blue;
+  font-size: $base;
+}
+.savings {
+  height: 30px;
+  font-size: $base;
+}
+.clickHere {
+  height: 20px;
+  font-size: $small;
+  color: $blue;
+}
+.ratingText.ratingText {
+  font-size: 10px;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: normal;
+  word-spacing: 0;
+}
+.LinkWidth {
+  width: 80%;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  background-position: top center;
+  top: auto;
+  bottom: 0px;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+}

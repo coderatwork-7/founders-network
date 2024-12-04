@@ -1,0 +1,57 @@
+/* ONLY FOR STORYBOOK. 
+*  Moved to Global.scss for Next application.
+*/
+.react-datepicker__today-button {
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.react-datepicker__header {
+  background-color: #fff;
+  border: none;
+}
+
+.react-datepicker__day--today {
+  border: none;
+}
+
+.react-datepicker__month-container,
+.react-datepicker__children-container,
+.react-datepicker__day-names,
+.react-datepicker__month,
+.react-datepicker__header,
+.react-datepicker__week {
+  width: 100%;
+}
+
+.react-datepicker__week,
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+
+.react-datepicker__day-name {
+  color: #98cdcd;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: transparent;
+}
+
+.react-datepicker__children-container {
+  margin: 0;
+}
+
+.react-datepicker__month {
+  margin: 0;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  width: 75%;
+}

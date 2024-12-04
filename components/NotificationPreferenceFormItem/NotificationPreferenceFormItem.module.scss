@@ -1,0 +1,95 @@
+@import '@/styles/override';
+
+.NotificationPreferenceFormItem {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.editFormItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submitButton {
+  max-width: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 3rem;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  line-height: 1rem;
+  &:hover {
+    font-weight: 900;
+  }
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.screen {
+  background-color: rgba(246, 246, 243, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.select {
+  width: 100%;
+}
+
+.introductionVideo {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.selectContainer {
+  width: 100%;
+}
+
+.description {
+  color: $gray-dim;
+  font-size: 0.9rem;
+}
+
+.addressRow {
+  display: flex;
+  width: 100%;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description {
+  color: $gray-dim;
+  font-size: 0.9rem;
+}

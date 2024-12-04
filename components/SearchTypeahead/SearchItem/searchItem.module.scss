@@ -1,0 +1,56 @@
+@import '@/styles/override';
+
+.searchItem {
+  display: flex;
+  align-items: center;
+  padding: 4px 30px;
+  border: 1px solid transparent;
+  overflow-x: hidden;
+  min-height: 40px;
+
+  &:hover {
+    background-color: $gray-lightest;
+    border-radius: 8px;
+    border: 1px solid $gray-brownish;
+  }
+
+  .imgContainer img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .details {
+    line-height: 20px;
+
+    .title {
+      font-size: $font16;
+      color: $black;
+      margin-right: 10px;
+
+      :global(.highlighted) {
+        font-weight: 700;
+      }
+    }
+
+    .info {
+      font-size: $font13;
+      font-weight: 600;
+      color: $gray-darker;
+      display: inline-block;
+      line-height: 100%;
+      margin-right: 10px;
+      vertical-align: middle;
+
+      &::before {
+        content: '';
+        margin: 0 5px 0 0;
+        border: 3px solid currentColor;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}

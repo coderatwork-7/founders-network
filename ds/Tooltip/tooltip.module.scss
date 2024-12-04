@@ -1,0 +1,28 @@
+@import '@/styles/override';
+
+.popoverDark {
+  --bs-popover-border-color: #{$gray-darkest};
+  --bs-popover-header-bg: #{$gray-darkest};
+  --bs-popover-bg: #{$gray-darkest};
+  z-index: 1045;
+
+  &:global(.container-border) {
+    border-color: #{$gray-darkest};
+  }
+
+  :global {
+    .popover-arrow::before {
+      border: 0;
+    }
+  }
+}
+
+.tooltip {
+  letter-spacing: 0.8px;
+  word-spacing: 1px;
+  padding: 12px 15px;
+}
+
+.icon {
+  font-size: $base;
+}

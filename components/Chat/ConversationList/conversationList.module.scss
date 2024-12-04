@@ -1,0 +1,96 @@
+@import '@/styles/override';
+
+.container {
+  position: relative;
+  min-width: 320px;
+  flex: 0 0 440px;
+  max-width: 35%;
+  height: 100%;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .header {
+    flex: 0 0 80px;
+    color: $black;
+    font-size: $font25;
+    font-weight: 700;
+    padding: 10px 0 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    position: relative;
+
+    .icon {
+      cursor: pointer;
+      z-index: 5;
+      margin-right: 20px;
+    }
+
+    .iconBack {
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  .listContainer {
+    overflow-y: auto;
+    flex: 1 1 auto;
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+
+  .list {
+    background-color: $white;
+    min-height: 100%;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    min-width: 100%;
+
+    .header {
+      border-bottom: 1px solid $gray-more-light;
+      font-size: $font20;
+      padding: 10px 20px;
+      flex-basis: 65px;
+
+      .iconBack {
+        display: inline-block;
+      }
+    }
+
+    .listContainer {
+      border: none;
+      position: relative;
+      margin: 0;
+    }
+
+    .list {
+      margin: 0px auto;
+      width: 100%;
+    }
+
+    display: none;
+    &.show {
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-sm) {
+    .list {
+      max-width: 100%;
+    }
+  }
+}
+
+.userSearch {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  background-color: $white;
+  width: 100%;
+}

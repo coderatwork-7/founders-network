@@ -1,0 +1,204 @@
+@import '@/styles/override';
+
+$left-width: calc(60% - 11px);
+
+.container {
+  display: flex;
+  .left {
+    width: $left-width;
+    max-width: $left-width;
+    min-width: $left-width;
+  }
+  .divider {
+    margin: 0 20px;
+    border-right: 1px solid $container-border-opacity;
+  }
+  .right {
+    width: 100%;
+  }
+  textarea,
+  select,
+  input {
+    width: 100%;
+    font-size: $small;
+  }
+  option {
+    span {
+      display: inline-block;
+      padding: 4px;
+    }
+  }
+}
+
+.transform {
+  transform: translateY(-100%);
+}
+.image {
+  width: 120px;
+  height: 134px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.avatarImg,
+.upload {
+  &,
+  & img {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    min-width: 120px !important;
+    min-height: 120px !important;
+  }
+}
+.buttonHeight {
+  font-size: 12px !important;
+  min-height: 28px !important;
+  max-height: 28px !important;
+}
+.upperHalfGrid,
+.lowerGrid {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  gap: 5px;
+}
+.upperHalfGrid {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 10px 20px;
+}
+.gridColumnExtendTwo {
+  grid-column: span 2;
+}
+.smallText {
+  font-size: 12px !important;
+}
+.formControlHeight {
+  padding: 0;
+}
+.marginRightSmall {
+  margin-right: 10px;
+}
+.lowerGrid {
+  display: grid;
+  grid-template-columns: 130px repeat(2, 1fr);
+}
+.centeredContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keywordInputPadding {
+  padding: 5px;
+}
+.gridExtendTwoRows {
+  grid-row: span 2;
+}
+.margined {
+  margin: 1rem 0 !important;
+}
+.wrap {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.maxWidth {
+  width: 150px;
+}
+.maxWidthPreview {
+  width: 440px;
+}
+.greenColor {
+  color: $green;
+}
+.fullScreen {
+  height: calc(100vh - 4rem - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$border: 1px solid $container-border-opacity;
+.doubleBordered {
+  border-top: $border;
+  border-bottom: $border;
+}
+.previewBg {
+  background-color: $faded-blue;
+}
+.previewImg {
+  min-width: 70px;
+  max-width: 80px;
+}
+.inputBar {
+  border: 1px solid $container-border-opacity;
+  outline: 0;
+  width: 120px;
+  display: inline-block;
+  transform: translateY(-18px);
+}
+.orText {
+  text-align: center;
+  transform: translateY(-10px);
+}
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .upperHalfGrid,
+  .lowerGrid {
+    gap: 5px;
+  }
+  .upperHalfGrid {
+    grid-template-columns: 1fr;
+  }
+  .lowerGrid {
+    grid-template-columns: 1fr;
+  }
+  .gridExtendTwoRows {
+    grid-row: span 1;
+  }
+  .gridColumnExtendTwo {
+    grid-column: span 1;
+  }
+  .container {
+    display: block;
+    .left {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .divider {
+      margin: 0 0;
+      border-right: none;
+    }
+    .right {
+      width: 100%;
+    }
+    textarea,
+    select,
+    input {
+      width: 100%;
+    }
+    option {
+      span {
+        display: inline-block;
+        padding: 4px;
+      }
+    }
+  }
+  .greenColor {
+    font-size: $base;
+  }
+  .verify {
+    font-size: $small;
+    text-align: center;
+  }
+  .smallScreenPreview {
+    margin-top: 10px;
+  }
+  .gridPlaceholder {
+    display: none;
+  }
+  .maxWidthPreview {
+    width: 220px;
+  }
+}
+.errorBoundary {
+  border: 1px solid $red;
+}

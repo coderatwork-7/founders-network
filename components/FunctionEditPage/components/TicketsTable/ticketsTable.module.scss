@@ -1,0 +1,110 @@
+@import '@/styles/override';
+
+.tableContainer {
+  margin-top: 20px;
+  border: 1px solid $gray-light-dim;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: $small;
+    letter-spacing: 0.2px;
+
+    thead {
+      border-bottom: 1px solid $gray-light-dim;
+      background-color: $gray-lightest-special;
+      letter-spacing: 0.8px;
+
+      th {
+        &:first-of-type {
+          width: 220px;
+        }
+
+        &:last-of-type {
+          width: 180px;
+        }
+      }
+    }
+
+    tr {
+      &:first-of-type td {
+        padding-top: 20px;
+      }
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+
+      input {
+        height: 35px;
+        width: 120px;
+        padding: 0 6px;
+        border-radius: 4px;
+        border: 1px solid $gray-lighter;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $gray;
+        }
+      }
+    }
+
+    .deleteButton {
+      all: unset;
+      cursor: pointer;
+      color: $gray-dark;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+.dollar {
+  font-size: $small;
+}
+
+.select {
+  width: 95%;
+
+  .control {
+    min-height: 35px;
+
+    &:focus-within {
+      box-shadow: none;
+      border: 1px solid $black;
+      outline: 1px solid $black;
+    }
+  }
+
+  .indicatorsContainer {
+    padding: 0;
+    height: 35px;
+
+    div {
+      padding: 0 10px;
+    }
+
+    svg {
+      height: 20px;
+    }
+  }
+
+  .value {
+    padding: 0 8px !important;
+  }
+}
+
+.specialChargeBtn {
+  margin: 20px auto !important;
+  font-weight: bold;
+}

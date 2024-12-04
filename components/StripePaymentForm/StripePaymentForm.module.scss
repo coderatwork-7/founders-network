@@ -1,0 +1,11 @@
+@import '@/styles/override';
+
+.StripePaymentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+  button {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,53 @@
+@import '@/styles/override';
+
+.modal {
+  .content {
+    width: 400px;
+
+    @media (max-width: 480px) {
+      width: 100vw;
+    }
+  }
+}
+
+.helpText {
+  color: $gray-dark;
+  text-align: center;
+  font-size: $font14;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  margin: 0 10px;
+}
+
+.calendarPopover .calendarIcons {
+  width: 50px;
+  height: 50px;
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 10%;
+  color: $fn-primary-color;
+  letter-spacing: 0.4px;
+
+  textarea {
+    padding: 10px;
+    min-height: 100px;
+    max-height: 200px;
+    outline: none;
+    border: 1px solid $gray-lighter;
+    border-radius: 3px;
+  }
+}
+
+.btnConatiner {
+  margin: 0;
+  justify-content: flex-end;
+}

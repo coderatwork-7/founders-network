@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.userUpdates {
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+  height: 30px;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0 20px 0 15px;
+
+  @media (max-width: 1024px) {
+    margin: 0 10px;
+  }
+}

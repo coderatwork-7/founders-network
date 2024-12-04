@@ -1,0 +1,11 @@
+@import '@/styles/colors';
+
+.content {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.content a {
+  color: $blue-light;
+  text-decoration: none;
+}

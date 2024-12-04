@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.header {
+  svg {
+    cursor: pointer;
+    font-size: $font18;
+  }
+}
+
+.selectedIcon {
+  color: $black;
+}
+.unSelectedIcon {
+  color: $gray-darker;
+}

@@ -1,0 +1,20 @@
+@import '@/styles/override';
+
+.groupTitle {
+  font-weight: 600;
+  color: $green;
+  text-transform: uppercase;
+  font-size: $font14;
+  margin-bottom: 5px;
+}
+
+.groupLink {
+  display: inline-block;
+  font-size: $font15;
+  font-weight: 700;
+  color: $gray-darker;
+  margin: 5px 0 20px 30px;
+  @media (max-width: 735px) {
+    margin: 5px 0 20px 10px;
+  }
+}

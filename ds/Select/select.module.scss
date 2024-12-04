@@ -1,0 +1,62 @@
+@import '@/styles/override';
+
+.select {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding: 4px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: $white;
+  outline: 1px solid $gray-lighter;
+  width: fit-content;
+  margin: 0 auto;
+
+  &::after {
+    content: '';
+    margin-left: auto;
+    margin-right: 4px;
+
+    border-top: 6px dashed currentColor;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+
+  &.show::after {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: inherit;
+  outline: inherit;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 3;
+
+  &.match {
+    left: 0;
+  }
+}
+
+.item {
+  padding: 6px 10px 6px 4px;
+  text-align: left;
+
+  &:hover {
+    background-color: $gray-lightest-special;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}

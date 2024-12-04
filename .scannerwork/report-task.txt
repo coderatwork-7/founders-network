@@ -1,0 +1,6 @@
+projectKey=founders-network-frontend
+serverUrl=https://sonarqube.objectedge.com
+serverVersion=9.8.0.63668
+dashboardUrl=https://sonarqube.objectedge.com/dashboard?id=founders-network-frontend
+ceTaskId=AYeTQTCo1OIQ-yTb5dy-
+ceTaskUrl=https://sonarqube.objectedge.com/api/ce/task?id=AYeTQTCo1OIQ-yTb5dy-

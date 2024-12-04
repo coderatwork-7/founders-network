@@ -1,0 +1,125 @@
+@import '@/styles/override';
+@mixin colorCode($class, $color) {
+  &.#{$class} {
+    &:hover {
+      background-color: rgba($color, 0.2);
+    }
+    .before {
+      background-color: $color;
+    }
+    &.highlighted.highlighted.highlighted.highlighted {
+      background-color: rgba($color, 0.2);
+      color: $gray-darkest;
+    }
+  }
+}
+.arrowDown {
+  border-style: solid;
+  border-width: 5px;
+  border-color: $gray-dark transparent transparent;
+  transform: translateY(4px);
+}
+.arrowUp {
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent $gray-dark;
+  transform: translateY(-1px);
+}
+.facetName {
+  margin-right: 5px;
+}
+.container {
+  cursor: pointer;
+  &:hover {
+    .arrowDown {
+      border-color: $gray-darkest transparent transparent;
+    }
+    .arrowUp {
+      border-color: transparent transparent $gray-dark;
+    }
+  }
+}
+.popover {
+  padding: 8px 0;
+  font-size: $font14;
+  color: $fn-secondary-color;
+  max-height: 250px;
+  overflow: auto;
+  min-width: 200px;
+  max-width: 200px;
+
+  &.colorful {
+    padding: 0;
+    max-height: none;
+  }
+
+  &.withoutPopover {
+    max-width: initial;
+    min-width: initial;
+  }
+
+  .highlighted.highlighted.highlighted.highlighted {
+    background-color: $gray-snow;
+    color: $black;
+  }
+  .color {
+    height: 50px;
+    padding: 4px 0;
+    & > span {
+      cursor: pointer;
+      &:nth-child(1) {
+        display: inline-block;
+        height: 100%;
+        gap: 12px;
+        position: relative;
+        width: 100%;
+      }
+    }
+    .before {
+      content: '';
+      display: inline-block;
+      height: 50px;
+      width: 5px;
+      z-index: 1;
+    }
+    @include colorCode(grayDarkClass, $gray-dark);
+    @include colorCode(greenLightClass, $green-light);
+    @include colorCode(regentBlueClass, $fn-regent-st-blue);
+    @include colorCode(goldenTainoiClass, $fn-golden-tainoi-alpha);
+    @include colorCode(grayishBlueClass, $fn-grayish-blue);
+    @include colorCode(lightSalomClass, $fn-light-salom);
+  }
+
+  div {
+    &:not(.color, .checkbox) {
+      padding: 5px 7px;
+      line-height: 20px;
+      cursor: pointer;
+      overflow-wrap: break-word;
+    }
+  }
+  .checkbox {
+    margin-right: 5px;
+  }
+}
+.input {
+  margin-bottom: 3px;
+  input[type='text'] {
+    &,
+    &:active,
+    &:focus {
+      display: inline-block;
+      border-radius: 3px;
+      height: 34px;
+      font-size: $font15;
+      width: 95%;
+      box-shadow: none;
+      border: 1px solid $gray-light-dim;
+      color: $gray-dark;
+      outline: none;
+    }
+  }
+}
+.facetValueName {
+  max-width: 170px;
+}

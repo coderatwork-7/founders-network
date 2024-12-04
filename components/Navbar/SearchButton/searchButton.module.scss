@@ -1,0 +1,44 @@
+@import '@/styles/override';
+
+.searchIconContainer {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: center;
+  cursor: pointer;
+
+  .icon {
+    font-size: $large;
+    color: $fn-primary-color;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.searchBox {
+  button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 35%;
+    height: 30%;
+    border-right: 1px solid $gray-90;
+  }
+}
+
+.backdrop {
+  transition: none;
+  top: 68px;
+}

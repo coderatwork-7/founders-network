@@ -1,0 +1,55 @@
+@import '@/styles/override';
+
+.modal {
+  .content {
+    max-width: 400px;
+    margin: auto;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+  }
+}
+
+.modalTitle {
+  width: 100%;
+  font-size: $heading5;
+  color: $black;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px auto;
+  padding-left: 30px;
+
+  @media (max-width: 360px) {
+    font-size: $heading6;
+    letter-spacing: 0.4px;
+    padding-left: 0px;
+  }
+}
+
+.btnConatiner {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin: 10px 5% 30px 5%;
+
+  .btn {
+    font-size: $xsmall;
+
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 1px rgba($color: $black, $alpha: 0.7);
+    padding: 8px 12px;
+    min-height: 0;
+    transition: none;
+  }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    gap: 10px;
+
+    .btn {
+      font-size: $smallmb;
+      min-height: 30px;
+    }
+  }
+}

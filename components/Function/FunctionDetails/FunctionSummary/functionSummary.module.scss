@@ -1,0 +1,70 @@
+@import '@/styles/override';
+
+.functionBanner {
+  width: 100%;
+}
+
+.cardContainer {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.dateAndPrice {
+  font-size: $base;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.bookmark {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: $base;
+  color: $blue;
+  margin-top: 5px;
+}
+
+.summaryHeader {
+  font-size: $heading4;
+}
+
+.ticketButton {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 25px;
+  button {
+    width: 250px;
+  }
+}
+
+.whatIncluded {
+  cursor: pointer;
+  color: $blue;
+}
+
+.bookedTickets {
+  margin-top: 20px;
+  text-align: start;
+  padding: 5px 5px 5px 20px;
+  border-left: 40px solid $blue;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .ticketButton {
+    flex-direction: column-reverse;
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+
+  .bookedTickets {
+    border-left: 20px solid $blue;
+    h5 {
+      font-size: $large;
+    }
+  }
+}

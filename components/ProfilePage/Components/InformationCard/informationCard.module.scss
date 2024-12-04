@@ -1,0 +1,232 @@
+@import '@/styles/override';
+
+.informationCard {
+  margin-top: 30px;
+  max-width: 940px;
+  min-height: 310px;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  .leftContainer {
+    flex-grow: 1;
+    width: 264px;
+    padding-bottom: 20px;
+    border-right: 1px solid $light-grayish-blue;
+    background: $blue-lightest;
+
+    > h4 {
+      font-size: $font14;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0 40px;
+      margin: 18px 0;
+      text-align: left;
+    }
+
+    ul {
+      height: inherit;
+      padding: 0 10px;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      overflow-y: auto;
+
+      a {
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+
+        li {
+          background: $white;
+          width: 100%;
+          height: fit-content;
+          //list-style: none;
+          padding: 4px 14px;
+          border-radius: 18px;
+          font-size: $font14;
+          margin: 0 6px 4px 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+          border: 1px solid $gray-less-light;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .rightContainer {
+    width: calc(100% - 265px);
+    padding: 0 40px 20px;
+
+    .informationContainer {
+      h4 {
+        font-size: $font14;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 18px 0;
+        text-align: left;
+      }
+
+      div {
+        padding: 20px;
+        border: 0.5px solid $gray-less-light;
+        border-radius: 5px;
+
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          cursor: pointer;
+          text-decoration: none;
+          color: inherit;
+
+          h5 {
+            font-weight: bold;
+            text-align: left;
+            margin-right: 10px;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .bioContainer {
+      margin-top: 35px;
+
+      h4 {
+        font-size: $font14;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 18px 0;
+        text-align: left;
+      }
+
+      .bioCard {
+        padding: 30px;
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+    .statsContainer {
+      margin-top: 35px;
+      text-align: left;
+
+      h4 {
+        font-size: $font14;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 18px 0 30px 0;
+        text-align: left;
+      }
+
+      .dataContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .statsLeftContainer {
+          width: 70%;
+
+          p {
+            font-size: $font14;
+          }
+        }
+
+        .statsRightContainer {
+          width: 30%;
+
+          .statsOfferHelp {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+            border-radius: 5px;
+            border: 1px solid $fn-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .companyContainer {
+    margin-top: 35px;
+    text-align: left;
+    h4 {
+      font-size: $font14;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 18px 0 30px 0;
+      text-align: left;
+    }
+    .companyRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .companyColumn {
+      flex: 1 1 50%;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+    .companyColumn strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .imageWrapper {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    flex-direction: column;
+    max-height: none;
+
+    .leftContainer {
+      width: 100%;
+      max-height: 300px;
+
+      ul {
+        max-height: 230px;
+        overflow-y: auto;
+      }
+    }
+
+    .rightContainer {
+      width: 100%;
+      padding: 0 15px 20px;
+      height: auto;
+
+      .statsContainer {
+        .dataContainer {
+          .statsLeftContainer {
+            width: 65%;
+          }
+
+          .statsRightContainer {
+            display: flex;
+            justify-content: flex-end;
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.companyLogo {
+  object-fit: contain;
+}

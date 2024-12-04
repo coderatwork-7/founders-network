@@ -1,0 +1,117 @@
+@import '@/styles/override';
+
+.modalHeader {
+  justify-content: center;
+  padding: 10px 16px;
+
+  .modalTitle {
+    font-size: $heading4;
+    font-weight: bold;
+  }
+
+  :global(.btn-close) {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+}
+
+.modalBody {
+  background-color: $bg-color;
+
+  // .page {
+  //   max-width: 960px;
+  //   margin: 0 auto;
+  // }
+}
+
+// .header {
+//   display: flex;
+//   text-align: left;
+//   gap: 30px;
+
+//   @media only screen and (max-width: $grid-breakpoint-md) {
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+// }
+
+// .page {
+//   margin: 0 auto;
+//   width: 80%;
+// }
+
+// .coverImgContainer {
+//   flex-shrink: 0;
+//   position: relative;
+//   overflow: hidden;
+//   height: 250px;
+//   width: 370px;
+//   background-color: rgba($color: $fn-light-green, $alpha: 0.4);
+
+//   .coverImg {
+//     object-fit: cover;
+//   }
+
+//   @media only screen and (max-width: $grid-breakpoint-md) {
+//     width: 100%;
+//   }
+// }
+
+// .title {
+//   font-weight: bold;
+//   font-size: $heading1;
+//   letter-spacing: 0.4px;
+//   word-spacing: 1px;
+//   width: 100%;
+//   resize: none;
+//   height: 1lh;
+//   box-sizing: content-box;
+//   line-height: 1.2;
+//   padding: 10px 0;
+// }
+
+// .subtitle {
+//   font-size: $heading5bold;
+//   color: $gray-dim;
+//   letter-spacing: 1px;
+//   word-spacing: 1px;
+//   line-height: 1.5;
+// }
+
+// @media only screen and (max-width: $grid-breakpoint-md) {
+//   .title {
+//     font-size: $heading2mb;
+//     margin-bottom: 10px;
+//   }
+
+//   .subtitle {
+//     font-size: $heading6mb;
+//     letter-spacing: 0.4px;
+//     word-spacing: 1px;
+//     line-height: 1.5;
+//   }
+
+//   .details {
+//     font-size: $largemb;
+//     margin: 25px 0;
+//     padding: 40px 35px;
+//     line-height: 1.4;
+//   }
+// }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  font-size: $smallmb;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 1px $black;
+  padding: 6px 10px;
+  min-height: 0;
+  transition: none;
+}

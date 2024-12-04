@@ -1,0 +1,33 @@
+@import '@/styles/override';
+
+.modalBody {
+  font-size: $font14;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  text-align: left;
+  background-color: $white;
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: $font18;
+  z-index: 1;
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 200px;
+}

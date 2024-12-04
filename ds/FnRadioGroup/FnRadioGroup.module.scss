@@ -1,0 +1,17 @@
+@import '@/styles/override';
+
+.FnRadioGroup {
+}
+
+.options {
+}
+
+.optionsRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.description {
+  color: $gray-dim;
+  font-size: 0.9rem;
+}

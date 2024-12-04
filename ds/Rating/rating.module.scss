@@ -1,0 +1,20 @@
+@import '@/styles/override';
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ratingText {
+  font-size: $font14;
+  font-weight: bold;
+  color: $green-light;
+  min-height: 16px;
+  text-align: left;
+  background-color: transparent;
+  letter-spacing: 0.8px;
+  word-spacing: 1.4px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,1 @@
+export {EditableFacetField} from './EditableFacetField';

@@ -1,0 +1,23 @@
+@import '@/styles/override';
+
+.main {
+  background-color: $white;
+  padding: 30px 5% 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.tableContainer {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.title {
+  text-align: left;
+  font-size: $heading4bold;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  font-weight: bold;
+}

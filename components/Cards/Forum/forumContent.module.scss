@@ -1,0 +1,68 @@
+@import '@/styles/override';
+.title {
+  font-size: $largebold;
+  line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.titleExpanded {
+  font-size: $heading3;
+  line-height: 32px;
+  color: $green;
+  font-weight: bold;
+  margin-bottom: 0;
+
+  @media (max-width: $grid-breakpoint-md) {
+    font-size: $heading3mb;
+    line-height: 28px;
+  }
+}
+
+.content {
+  font-size: $base;
+  line-height: 1.5;
+  overflow-y: hidden;
+  color: $gray-darkest;
+  margin-bottom: 10px;
+
+  ul,
+  ol {
+    all: revert;
+  }
+
+  &.expanded {
+    font-size: $large;
+    margin-top: 20px;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 400px;
+    margin: 20px 10px;
+    display: block;
+  }
+
+  iframe {
+    display: block;
+  }
+}
+
+.show {
+  overflow-y: auto;
+}
+.readmore {
+  font-size: $large;
+  color: $blue;
+  cursor: pointer;
+}
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .title {
+    font-size: $baseboldmb;
+  }
+
+  .content,
+  .readmore {
+    font-size: $largemb;
+  }
+}

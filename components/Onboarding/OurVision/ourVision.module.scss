@@ -1,0 +1,27 @@
+@import '@/styles/override';
+
+.visionContainer {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  .separator {
+    height: 5px;
+    width: 100%;
+    background-color: $green;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .sharedVisionText {
+    color: $green;
+    font-size: $heading6bold;
+    margin-bottom: 20px;
+  }
+  .startupText {
+    font-size: $heading6bold;
+    margin-bottom: 20px;
+  }
+  .welcomeText {
+    font-size: $heading1bold;
+    margin-bottom: 20px;
+  }
+}

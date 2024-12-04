@@ -1,0 +1,16 @@
+@import '@/styles/override';
+
+.modal {
+  .content {
+    width: 400px;
+
+    @media (max-width: 480px) {
+      width: 100vw;
+    }
+  }
+}
+
+.btnConatiner {
+  margin: 0;
+  justify-content: flex-end;
+}

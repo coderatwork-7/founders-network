@@ -1,0 +1,14 @@
+@import '@/styles/override';
+
+.userDetails {
+  padding: 15px 0 0;
+
+  :global(.cardTitleText) {
+    color: $gray-darkest;
+    font-size: $base;
+  }
+}
+.border {
+  border: 2px solid $container-border-opacity;
+  outline: none;
+}

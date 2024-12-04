@@ -1,0 +1,152 @@
+@import '@/styles/override';
+.topRibbon {
+  padding: 50px 0;
+  background-color: $green-dark;
+  color: $white;
+  font-size: 28px;
+}
+.card {
+  padding: 1rem;
+}
+.header {
+  background-color: $green-dark;
+  width: 100%;
+  text-align: center;
+  h1 {
+    color: white;
+    padding: 1rem 0;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  .focusedElement {
+    background-color: $bluish-green;
+    border-radius: 2px;
+    input {
+      border: 1px solid transparent;
+    }
+  }
+}
+.imageContainer {
+  flex: 1;
+  position: relative;
+
+  @media screen and (max-width: 1174px) {
+    display: none;
+  }
+}
+.rightCard {
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.formContainer {
+  display: flex;
+
+  justify-content: center;
+  padding: 2rem;
+  flex: 1;
+  background-color: white;
+}
+.form {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submitButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.imageOverlayContainer {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.highlighter {
+  background-color: $green-dark;
+  padding: 0 0.5rem;
+}
+.imageOverlay {
+  z-index: 10;
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  color: white;
+  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  overflow: hidden;
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+}
+
+$card-width: 226px;
+$card-half-width: 108px;
+
+.avatar {
+  float: left;
+  margin: 8px;
+  box-shadow: 0 0 0 1px $gray-lighter;
+  border-radius: 50%;
+}
+$card-x-space: 60px;
+$card-y-space: 200px;
+.leftCard {
+  position: absolute;
+  left: $card-x-space;
+  top: $card-y-space;
+}
+
+.grayColor {
+  color: $gray;
+}
+.redColor {
+  color: $red;
+}
+.padding {
+  padding: 15px;
+}
+.marginRightMed {
+  margin-right: 4px;
+}
+.checkbox {
+  height: 15px;
+  width: 15px;
+}
+.errorSVG {
+  color: $fn-light-salom;
+}
+.greenSVG {
+  color: $green;
+}
+.fullscreenCentered {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whiteSVG {
+  color: $white;
+  margin-top: 2px;
+}

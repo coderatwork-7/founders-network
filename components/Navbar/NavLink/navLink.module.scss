@@ -1,0 +1,97 @@
+@import '@/styles/override';
+
+.dropdownMenu {
+  flex-direction: column;
+  display: flex;
+  width: 225px;
+  background: $white;
+  border-radius: inherit;
+  padding: 4px 0;
+
+  a,
+  a:visited,
+  span {
+    font-size: $font16;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 2px 10px;
+    color: $gray-darkest;
+
+    &:hover,
+    &.selectedSubMenu:hover {
+      background-color: $green;
+      color: $white;
+    }
+
+    &.selectedSubMenu {
+      color: $green-lightest;
+    }
+  }
+}
+
+li.mobile {
+  height: 40px;
+  color: $gray-darkest;
+  font-weight: 500;
+
+  &:last-of-type {
+    background-color: $green;
+    color: $white;
+  }
+
+  a,
+  span {
+    line-height: 38px;
+    display: block;
+    color: inherit;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+
+  .selected {
+    color: $green-lightest;
+  }
+}
+
+li.desktop {
+  padding: 0 12px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  &.selected > a,
+  &.selected > span {
+    color: $green-lightest;
+  }
+
+  a {
+    color: $fn-primary-color;
+    font-size: $font16;
+    height: 50px;
+    display: block;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 0 6px;
+    font-size: $font14;
+
+    & > a {
+      font-size: inherit;
+    }
+  }
+}
+
+.desktop,
+.mobile,
+.dropdownMenu > * {
+  cursor: pointer;
+}

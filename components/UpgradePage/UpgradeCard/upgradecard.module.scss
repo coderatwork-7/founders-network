@@ -1,0 +1,20 @@
+@import '@/styles/override';
+
+.cardTopBorderStyles {
+  height: 7px;
+  background: linear-gradient(to right, $gray-more-light 0%, $green 100%);
+}
+
+.contentContainer {
+  box-sizing: content-box;
+  max-width: 960px;
+  width: 90%;
+  padding: 0px 30px 50px;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .contentContainer {
+    padding: 0 15px 50px;
+  }
+}

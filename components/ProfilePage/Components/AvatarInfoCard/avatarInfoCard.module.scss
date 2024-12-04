@@ -1,0 +1,78 @@
+@import '@/styles/override';
+
+.photoCard {
+  max-width: 940px;
+  min-height: 310px;
+  z-index: 100;
+  margin-top: -110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .iconsContainer {
+    height: 150px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      padding: 3px;
+      &:hover {
+        background: rgba($gray-dark, 0.2);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .avatarContainer {
+    width: 180px;
+    height: 180px;
+    margin: -205px 0 20px;
+  }
+
+  .textContainer {
+    color: $black;
+
+    h1 {
+      font-size: $font30;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: $font16;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-top: -15px;
+        margin-bottom: 5px;
+        font-size: $font14;
+        color: $blue;
+      }
+    }
+  }
+
+  .introButton {
+    width: 175px;
+    height: 50px;
+    margin-bottom: 20px;
+
+    div {
+      width: 100%;
+      height: 100%;
+
+      a {
+        padding: 8px;
+        width: 50%;
+
+        svg {
+          height: 35px;
+        }
+      }
+    }
+  }
+}

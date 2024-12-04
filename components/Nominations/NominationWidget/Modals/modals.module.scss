@@ -1,0 +1,195 @@
+@import '@/styles/override';
+
+.modal {
+  max-width: 700px;
+  text-align: center;
+
+  .modalTitle {
+    width: 100%;
+    font-size: $font30;
+    font-weight: 400;
+    color: $gray-dark;
+  }
+
+  .modalBody {
+    padding: 0;
+
+    .banner {
+      background: $green;
+      color: $white;
+      font-size: $font14;
+      height: 45px;
+      letter-spacing: 0.8px;
+      position: relative;
+
+      .animate {
+        animation: fade 10s infinite;
+        position: absolute;
+        width: 100%;
+        top: 10px;
+      }
+
+      .animate:nth-child(2) {
+        animation-delay: 5s;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media (max-width: $grid-breakpoint-lg) {
+    width: 420px;
+    margin: auto;
+
+    .modalTitle {
+      font-size: $font22;
+    }
+    .content .column h3 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .requestConfBody {
+    padding: 20px 40px;
+    font-size: $font18;
+    font-weight: 400;
+  }
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+
+  .column {
+    flex: 1 0 0;
+    padding: 10px 0 40px 0;
+
+    &:not(:last-of-type) {
+      border-right: 1px solid $gray-lighter;
+    }
+
+    h3 {
+      font-size: $font20;
+      color: $green;
+      margin-bottom: 20px;
+    }
+
+    & > ul {
+      padding: 0 20px;
+
+      li {
+        color: $green;
+        font-size: $font18;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 10px;
+
+        &::before {
+          content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="100%" height="100%" fill="%23336666" id="check"><path d="M1472 930v318q0 119-84.5 203.5T1184 1536H352q-119 0-203.5-84.5T64 1248V416q0-119 84.5-203.5T352 128h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-10 10-23 10-3 0-9-2-23-6-45-6H352q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V994q0-13 9-22l64-64q10-10 23-10 6 0 12 3 20 8 20 29zm231-489-814 814q-24 24-57 24t-57-24L345 825q-24-24-24-57t24-57l110-110q24-24 57-24t57 24l263 263 647-647q24-24 57-24t57 24l110 110q24 24 24 57t-24 57z"></path></svg>');
+          width: 20px;
+          height: 18px;
+        }
+      }
+    }
+
+    .reminder {
+      text-align: left;
+      margin: 0 30px 20px 30px;
+      line-height: 20px;
+    }
+  }
+
+  .tipsCol {
+    padding: 10px 0px 30px 0px;
+  }
+
+  @media (max-width: $grid-breakpoint-lg) {
+    .column.formCol {
+      border: none;
+    }
+    .tipsCol {
+      display: none;
+    }
+  }
+
+  .form {
+    width: 280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .inputContainer {
+      font-size: $font13;
+
+      input {
+        font-size: inherit;
+        height: 35px;
+        border-radius: 3px;
+      }
+      textarea {
+        font-size: inherit;
+        min-height: 70px;
+        padding: 5px;
+        border-radius: 3px;
+        line-height: 1.2;
+      }
+
+      &.feedback textarea {
+        min-height: 120px;
+      }
+    }
+
+    .btn {
+      margin-top: 10px;
+      font-size: $font14;
+      text-transform: uppercase;
+      color: $blue;
+      border: 1px solid currentColor;
+      border-radius: 3px;
+      padding: 8px 0;
+      font-weight: 500;
+      background-color: $white;
+      transition: none;
+
+      &:hover,
+      &:active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+
+    .error {
+      color: $red;
+      font-size: $font14;
+      line-height: 20px;
+      text-align: left;
+      margin-top: -5px;
+    }
+  }
+}
+
+.spinner {
+  height: 10px;
+  width: 10px;
+  vertical-align: baseline;
+  margin-right: 6px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

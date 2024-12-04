@@ -1,0 +1,56 @@
+@import '@/styles/override';
+
+.container {
+  position: relative;
+  width: fit-content;
+  line-height: 1;
+
+  .count {
+    background-color: $fn-light-salom;
+    color: $white;
+    border-radius: 10px;
+    padding: 4px 6px;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    border: 1px solid $white;
+  }
+
+  svg {
+    font-size: 40px;
+    cursor: pointer;
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &.sm {
+    svg {
+      font-size: 20px;
+    }
+
+    .count {
+      font-size: 8px;
+    }
+  }
+
+  &.md {
+    svg {
+      font-size: 25px;
+    }
+
+    .count {
+      font-size: 10px;
+    }
+  }
+
+  &.lg {
+    svg {
+      font-size: 30px;
+    }
+
+    .count {
+      font-size: 12px;
+    }
+  }
+}

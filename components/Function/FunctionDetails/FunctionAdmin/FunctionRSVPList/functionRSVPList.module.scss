@@ -1,0 +1,57 @@
+@import '@/styles/override';
+
+.cardContainer {
+  flex-grow: 6;
+  flex-shrink: 6;
+  flex-basis: 0;
+  border-radius: 0 5px 5px 0;
+  .listHeader {
+    padding: 20px 20px 5px 30px;
+    display: flex;
+    align-items: center;
+    .header {
+      flex-grow: 2;
+      flex-shrink: 2;
+      flex-basis: 0;
+    }
+  }
+}
+
+.emailList {
+  color: $blue;
+  cursor: pointer;
+}
+
+.listContainer {
+  height: 510px;
+  max-height: 510px;
+  overflow-y: auto;
+}
+
+.recordContainer {
+  padding: 10px 0;
+  border-top: 1px solid $silver;
+  color: $gray;
+}
+
+.memberBackground {
+  background-color: $gray-lightest;
+}
+
+.list {
+  flex: 2 2 0;
+}
+
+.memberList {
+  display: flex;
+  padding: 8px 10px 8px 24px;
+}
+
+.manage {
+  color: $blue;
+  cursor: pointer;
+}
+
+.download {
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+@import '@/styles/override';
+
+.container {
+  box-sizing: border-box;
+  background: $white;
+  position: relative;
+  overflow: hidden;
+
+  .borderStyles {
+    position: absolute;
+  }
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.banner {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1000px rgba($black-ligther, 0.4);
+  background-color: $fn-green;
+}
+
+.feedsStyles {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  color: $fn-third-color;
+}
+
+.membersContainerStyles {
+  border-top: 3px solid $fn-golden-tainoi-alpha;
+}
+
+.groupsContainerStyles {
+  border-top: 3px solid $fn-grayish-blue;
+}
+
+.functionsContainerStyles {
+  border-top: 3px solid $fn-regent-st-blue;
+}
+
+.dealsContainerStyles {
+  border-top: 3px solid $fn-light-salom-alpha;
+}
+
+.forumsContainerStyles {
+  border-top: 3px solid $green-light;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .feedsStyles {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .lock {
+    font-size: 12px;
+  }
+}

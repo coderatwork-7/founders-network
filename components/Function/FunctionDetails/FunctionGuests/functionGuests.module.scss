@@ -1,0 +1,47 @@
+@import '@/styles/override';
+
+.cardContainer {
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+
+  .bioContainer {
+    text-align: start;
+  }
+}
+
+.socialLinks {
+  border: 1px solid $green-lightest;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $green-lightest;
+  }
+  &:hover,
+  &:active,
+  &:disabled {
+    color: $blue;
+    border: 1px solid $blue;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+.tag {
+  border: none;
+  padding: 5px 10px;
+  background-color: $green-lightest;
+  color: $white;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}

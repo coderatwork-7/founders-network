@@ -1,0 +1,17 @@
+@import '@/styles/override';
+
+.heading {
+  font-size: $font27;
+  line-height: 20px;
+  font-weight: bold;
+
+  &.mobile {
+    font-size: $font22;
+  }
+}
+
+.onboarding {
+  position: fixed;
+  top: 260px;
+  z-index: 1;
+}

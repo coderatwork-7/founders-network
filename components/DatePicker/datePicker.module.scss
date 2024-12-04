@@ -1,0 +1,12 @@
+@import '@/styles/override';
+
+.nofunction {
+  font-size: $font11;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  background-color: $gray-light;
+  opacity: 0.5;
+}

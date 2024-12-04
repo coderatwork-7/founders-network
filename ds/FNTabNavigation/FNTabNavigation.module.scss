@@ -1,0 +1,59 @@
+@import '@/styles/override';
+
+.FNTabNavigation {
+  ul {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+    &::after {
+      content: '';
+      height: 1px;
+      background-color: $gray-less-darker;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  li {
+    padding: 10px 0;
+    position: relative;
+  }
+  button {
+    background-color: unset;
+    border: none;
+    padding: 0;
+    color: $gray-middle;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+}
+
+.activeTab {
+  button {
+    font-weight: 900;
+    color: $gray-darkest;
+  }
+
+  &::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: $gray-dark;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .FNTabNavigation {
+    ul {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

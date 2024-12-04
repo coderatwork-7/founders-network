@@ -1,0 +1,84 @@
+@import '@/styles/override';
+
+.warning {
+  color: $warning;
+}
+
+.formContainer {
+  input {
+    outline: none;
+    border: 1px solid $gray-lighter;
+    height: 35px;
+    padding: 8px;
+    border-radius: 3px;
+  }
+  .companyContainer {
+    display: flex;
+    .companyInputContainer {
+      width: 50%;
+      margin-bottom: 5px;
+      input {
+        width: 85%;
+      }
+    }
+  }
+
+  .pointContactContainer {
+    margin-bottom: 20px;
+    div {
+      margin-bottom: 5px;
+    }
+    .pointContactInput {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 10px;
+      input {
+        width: 95%;
+      }
+    }
+  }
+  .offerContainer {
+    margin: 10px 0;
+    div {
+      margin: 5px 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.lineBreak {
+  margin: 30px 0 20px;
+}
+
+.buttonContainer {
+  margin: 10px 0 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fieldInfo {
+  font-size: $xsmall;
+}
+
+.timeInput {
+  width: 120px !important;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .formContainer {
+    .companyContainer {
+      display: block;
+      .companyInputContainer {
+        width: 100%;
+      }
+    }
+
+    .pointContactContainer {
+      .pointContactInput {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

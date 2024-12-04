@@ -1,0 +1,188 @@
+@import '@/styles/override';
+
+.card {
+  width: 96%;
+  display: flex;
+  max-width: 800px;
+  font-size: $small;
+  padding: 30px 50px;
+  flex-direction: column;
+  margin: 10px auto 30px;
+  background-color: $white;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+
+  .label {
+    flex: 0 0 25%;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .fieldInput {
+    flex: 1 1 0;
+
+    input,
+    textarea {
+      margin: 0;
+      width: 100%;
+      display: block;
+      padding: 8px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.6px;
+      border: 1px solid $gray-lighter;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $gray;
+      }
+
+      &::placeholder {
+        color: $gray-darker;
+      }
+
+      @media (max-width: $grid-breakpoint-sm) {
+        padding: 6px 8px;
+        letter-spacing: 0.4px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .coverImg {
+    margin: 0;
+    width: 370px;
+    height: 250px;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid $gray-lighter;
+    background-color: $gray-lightest-special;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 480px) {
+      height: 200px;
+    }
+
+    @media (max-width: 380px) {
+      height: 180px;
+    }
+  }
+
+  .coverImgBtn {
+    bottom: 0;
+    width: 100%;
+    transform: none;
+    position: absolute;
+    background-color: transparent;
+  }
+
+  .err {
+    color: $red;
+    margin-top: 2px;
+    font-size: $xsmall;
+    letter-spacing: 0.6px;
+  }
+}
+
+.editorLabel {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.selectInput {
+  .control {
+    padding-left: 0;
+
+    &:focus-within {
+      box-shadow: none;
+      border-color: $gray;
+    }
+  }
+
+  .placeholder {
+    font-size: $small;
+    color: $gray-darker;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: $grid-breakpoint-md) {
+  .card {
+    padding: 20px 35px;
+  }
+
+  .field {
+    gap: 5px;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .fieldInput {
+      width: 100%;
+    }
+  }
+
+  .editorLabel {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: $grid-breakpoint-sm) {
+  .card {
+    font-size: $xsmall;
+  }
+
+  .field {
+    gap: 2px;
+  }
+
+  .editorLabel {
+    margin-bottom: 2px;
+  }
+
+  .selectInput {
+    .control {
+      padding: 0;
+    }
+
+    .tag {
+      font-size: $smallmb;
+    }
+
+    .placeholder {
+      font-size: $xsmall;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 15px 20px;
+    font-size: $smallmb;
+  }
+
+  .selectInput {
+    .removeBtn,
+    .btnSeparator {
+      display: none;
+    }
+
+    .placeholder {
+      font-size: $smallmb;
+    }
+  }
+}

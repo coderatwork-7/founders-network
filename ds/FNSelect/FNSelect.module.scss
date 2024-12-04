@@ -1,0 +1,17 @@
+@import '@/styles/override';
+
+.container {
+  flex: 1;
+}
+.FNSelect {
+  width: 100%;
+  text-transform: capitalize;
+
+  & > div {
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: $grid-breakpoint-md) {
+    width: 100%;
+  }
+}

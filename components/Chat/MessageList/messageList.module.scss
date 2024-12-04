@@ -1,0 +1,15 @@
+@import '@/styles/override';
+
+.messageList {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 10px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}

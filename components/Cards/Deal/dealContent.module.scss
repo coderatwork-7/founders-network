@@ -1,0 +1,78 @@
+@import '@/styles/override';
+.imageContainer {
+  display: flex;
+  align-items: center;
+  img {
+    width: 14%;
+    border: solid 1px $gray-90;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .info {
+    font-size: $largebold;
+    line-height: 1.2;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .deal {
+    font-size: $font17;
+    color: $gray-darkest;
+  }
+  .lock {
+    margin-top: 15px;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: $font16;
+    box-shadow: 0px 0px 0px 1px $silver;
+    background: url(/images/lock_green.svg) no-repeat left 25px center / 40px;
+    padding: 5px 5px 5px 80px;
+    background-position: left 25px center;
+    color: $gray-darkest;
+    line-height: 1.58;
+    min-height: 50px;
+    word-wrap: break-word;
+  }
+}
+.displayDealOffer {
+  border: solid 1px $gray-more-light;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0 0 0;
+  border-radius: 3px;
+  color: $gray-darkest;
+  font-size: 18px;
+  line-height: 1.58;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .imageContainer {
+    .deal,
+    .info {
+      font-size: $baseboldmb;
+    }
+    .lock {
+      font-size: $basemb;
+    }
+  }
+}
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .imageContainer {
+    .deal,
+    .info {
+      font-size: $largemb;
+    }
+    .lock {
+      font-size: $basemb;
+    }
+  }
+}

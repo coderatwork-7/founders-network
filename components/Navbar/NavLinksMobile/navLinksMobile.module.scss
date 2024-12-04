@@ -1,0 +1,31 @@
+@import '@/styles/override';
+.icon {
+  cursor: pointer;
+  line-height: 65px;
+  font-size: $font20;
+
+  svg:hover {
+    color: $green;
+  }
+
+  &.closeIcon {
+    font-size: $font25;
+  }
+}
+
+.menuLinks {
+  position: fixed;
+  top: 68px;
+  letter-spacing: 1px;
+  left: 0;
+  background-color: $white;
+  overflow: hidden;
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  padding: 0.5rem;
+
+  &.expanded {
+    max-height: 800px;
+  }
+}

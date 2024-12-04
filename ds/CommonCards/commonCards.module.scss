@@ -1,0 +1,122 @@
+@import '@/styles/override';
+
+.wrapper {
+  font-size: $font14;
+
+  .cardContentContainer {
+    padding: 20px;
+
+    &.mobile {
+      padding: 10px;
+
+      .rightPanel {
+        gap: 10px;
+      }
+    }
+
+    &.grid {
+      padding: 25px 5px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .rightPanel {
+      color: $gray-dark;
+
+      h4 {
+        font-size: $base;
+        margin: 0;
+      }
+
+      h5 {
+        font-size: $small;
+        color: $fn-secondary-color;
+      }
+
+      .objectives {
+        color: $fn-secondary-color;
+      }
+    }
+  }
+
+  .grid {
+    .rightPanel {
+      h4 {
+        font-size: $font14;
+        margin: 0;
+      }
+
+      h5 {
+        color: $gray-middle;
+      }
+    }
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .footer {
+    height: 40px;
+    background-color: $gray-light;
+    color: $gray-middle;
+    border-top: 1px solid $gray-90;
+
+    a {
+      cursor: pointer;
+    }
+
+    &.mobile {
+      height: auto;
+      font-size: $font12;
+      padding: 0 10px 5px 10px;
+
+      .sector {
+        max-width: 100%;
+      }
+    }
+
+    &.popoverCard {
+      a {
+        cursor: text;
+      }
+    }
+
+    .footerField {
+      max-width: 35%;
+    }
+  }
+  .objectivesDiv {
+    div {
+      margin: 5px 0;
+    }
+  }
+}
+
+.introButton {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.mnHeight34 {
+  min-height: 34px;
+}
+
+.popoverField {
+  flex-shrink: 0;
+  max-width: 33%;
+
+  &.sector {
+    flex-shrink: 1;
+    max-width: 100%;
+  }
+}
+
+.investorName {
+  a {
+    font-size: 1rem;
+  }
+}

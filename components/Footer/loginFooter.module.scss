@@ -1,0 +1,13 @@
+@import 'override';
+
+.loginFooter {
+  font-weight: normal;
+  border-top: 1px solid $gray-very-light;
+  box-shadow: 0 3px 5px 2px;
+  padding: 40px;
+  width: 100%;
+  color: $gray-dim;
+  font-size: $font16;
+  position: absolute;
+  bottom: 0;
+}

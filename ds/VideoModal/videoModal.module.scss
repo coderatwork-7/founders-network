@@ -1,0 +1,14 @@
+$bs-modal-zindex: 1440;
+.modal {
+  height: 50vh;
+  max-width: 50vw;
+
+  &.mobile {
+    height: 60vh;
+    max-width: none;
+  }
+  .image {
+    max-height: 50vh;
+    max-width: 50vw;
+  }
+}

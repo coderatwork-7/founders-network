@@ -1,0 +1,213 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+$fn-primary-color: #4c4c4d;
+$fn-secondary-color: #8d8d8d;
+$fn-third-color: #757575;
+
+//Founders Network color scheme
+$fn-ocean-liner: #1c983b;
+$fn-shuttle-grey: #556270;
+$fn-regent-st-blue: #a7d2d0;
+$fn-grayish-blue: #2e414d;
+$fn-white-harmonies: #f2f9f9;
+$fn-light-green: #23b574;
+$fn-golden-tainoi: #ffc24a;
+$fn-light-sky-blue: #21b9e7;
+$fn-light-salom: #f47068;
+
+$fn-golden-tainoi-alpha: rgb(255, 194, 74, 0.6);
+$fn-light-salom-alpha: rgb(244, 112, 104, 0.6);
+
+//Founders Network Extra
+$gray-lighter: #ccc;
+$gray-more-light: #ddd;
+$gray-brownish: #9b9da0;
+$gray-lightest-special: #f0f0f0;
+
+// colors
+$primary: $fn-primary-color;
+$secondary: $fn-secondary-color;
+$third: $fn-third-color;
+$white: #fff;
+$black: #000;
+$black-ligther: #041f1f;
+$azure: #fbfcfc;
+
+//backgroundColor
+$bg-color: #f5f5f5;
+$bg-tan: #ac8f55;
+$bg-tan-light: #c8ab73;
+$bg-mint-green: #f0fff6;
+$bg-teal-light: #51a78a;
+$bg-teal: #41866e;
+$bg-alice-blue: #f3f5f6;
+//Lifetime Membership background color;
+$bg-dark-teal: #49b483;
+
+// primary messaging
+$primary-lightest: #b2e0e5;
+$primary-light: #4cb7c2;
+$primary-dark: #005769;
+$primary-darkest: #03424c;
+
+//grays
+$gray-more-lightest: #ffffff;
+$gray-lightest: #fafafa;
+$gray-less-lightest: #f5f5f5;
+$gray-light: #f6f6f3;
+$gray: #808080;
+$gray-less-light: #d8d8d8;
+$gray-middle: #999999;
+$gray-dark: #666666;
+$gray-darkest: #333333;
+$gray-darker: #aaaaaa;
+$gray-less-darker: #bdbdbd;
+$gray-light: #f6f6f6;
+$gray-dim: #696969;
+$gray-very-light: #e1e1e1;
+$gray-light-dim: #d5d5d5;
+$gray-white-smoke: #f0f0f0;
+$light-grayish-blue: #ece9e6;
+$gray-dark-1: #7e7e7e;
+$gray-90: #e5e5e5;
+$gray-87: #dedede;
+$gray-snow: #f9f9f9;
+
+// Error messaging
+$red-lightest: #fce6e6;
+$red-light: #f8b3b3;
+$red-medium: #ef233c;
+$red: #e60000;
+$red-dark: #b80000;
+$red-darkest: #730000;
+
+// Waring messaging
+
+$orange-lightest: #ffeee9;
+
+$orange-light: #ffcdbc;
+
+$orange: #e64e1c;
+
+$orange-dark: #b33d16;
+
+$orange-darkest: #802c10;
+
+//Silver
+$silver: #ccc;
+
+// Success messaging
+
+$green-lightest: #99cccc;
+$green-light: #3e8786;
+$green: #336666;
+$green-dark: #1f4e4e;
+$green-darkest: #004115;
+$fn-standard-green: #1c6867;
+$fn-light-green: #49b483;
+$fn-green: #558383;
+
+// Recommended messaging: Blues
+
+$blue-lightest: #f2f8fc;
+
+$blue-light: #2a65c5;
+
+$blue: #466cc3;
+
+$blue-less-dark: #e0ecf0;
+
+$blue-dark: #00639e;
+
+$blue-darkest: #004e7c;
+
+$faded-blue: #f6f7f8;
+
+// Pink
+
+$pink-lightest: #f7e6f3;
+
+$pink-light: #e6b5db;
+
+$pink: #cf0d9e;
+
+$pink-dark: #a00a7b;
+
+$pink-darkest: #7c0860;
+
+$purple-alert: #cf0d9e;
+
+$success: $green;
+
+$info: $blue;
+
+$warning: $orange;
+
+$danger: $red;
+
+$dark: $gray-darkest;
+
+$light: $gray-lightest;
+
+$required: $gray-darkest;
+
+$search-warning: $pink;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'required': $pink,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'dark': $dark,
+  'light': $light
+);
+
+$middle-blue-green: #98cdcd;
+$bluish-green: #b4e7e7;
+$blue-stone: #1c6867;
+$cyprus: #165352;
+$teak: #a7905e;
+$green-smoke: #9aa75e;
+$snow: #f9f9f9;
+$lemon: #f37d86;
+
+// BUTTON COLOR VARIABLES
+$primary-btn: $green;
+$primary-btn-hover: $green-dark;
+$secondary-btn: $gray-brownish;
+$secondary-btn-hover: darken($gray-brownish, 10%);
+$tertiary-btn: $teak;
+$tertiary-btn-hover: $bg-tan-light;
+$outline-primary-btn: $primary-btn;
+$outline-secondary-btn: $secondary-btn;
+$outline-tertiary-btn: $tertiary-btn;
+
+$container-border: $gray-90;
+$container-border-opacity: rgba($gray-90, 0.8);
+$purple: #663367;
+
+//PAYMENT PALN COLORS
+$bootstrap: $gray-lighter;
+$angel: $bg-tan;
+$series-a: $pink-darkest;
+$lifetime: $fn-light-green;
+
+//FEED TYPE COLORS
+$feedColorMap: (
+  library: $gray,
+  forums: $green-light,
+  functions: $fn-regent-st-blue,
+  members: $fn-golden-tainoi-alpha,
+  groups: $gray,
+  deals: $fn-light-salom,
+  investors: $gray,
+  partners: $purple
+);
+
+//BORDER COLORS
+$cd-border-brown: #987b40;
+$cd-border-purple: #663367;

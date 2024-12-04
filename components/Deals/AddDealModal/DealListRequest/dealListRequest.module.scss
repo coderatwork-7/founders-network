@@ -1,0 +1,45 @@
+@import '@/styles/override';
+
+.membershipContainer {
+  padding: 7px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-left: 7px solid $bootstrap;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.angel {
+  border-left: 7px solid $angel;
+}
+
+.seriesa {
+  border-left: 7px solid $series-a;
+}
+
+// .input {
+//   width: 80px;
+// }
+
+.expiryField {
+  display: flex;
+  gap: 30px;
+  span {
+    margin: 0;
+  }
+}
+
+.cvvInput {
+  width: 70px;
+}
+
+.warning {
+  border: 1px solid $warning !important;
+}
+
+.warningText {
+  color: $warning;
+}

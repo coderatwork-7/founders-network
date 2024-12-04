@@ -1,0 +1,17 @@
+@import '@/styles/override';
+
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.expandButton {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .listContainer {
+    grid-template-columns: 1fr;
+  }
+}

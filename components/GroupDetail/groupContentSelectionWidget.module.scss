@@ -1,0 +1,26 @@
+@import '@/styles/override';
+@mixin colorCode($color, $class) {
+  .#{$class} {
+    border-left: 4px solid $color;
+    cursor: pointer;
+    &:hover,
+    &.selected {
+      background-color: rgb($color, 0.2);
+    }
+    &.selected {
+      cursor: default;
+    }
+  }
+}
+.container {
+  text-align: left;
+  overflow: hidden;
+  border-radius: 8px;
+  color: $gray-dark;
+  > div {
+    padding: 10px 16px;
+  }
+  @include colorCode($green-light, posts);
+  @include colorCode($fn-regent-st-blue, functions);
+  @include colorCode($fn-golden-tainoi-alpha, members);
+}

@@ -1,0 +1,1 @@
+export {NominationWidget} from './nominationWidget';

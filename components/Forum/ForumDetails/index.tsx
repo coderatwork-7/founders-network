@@ -1,0 +1,1 @@
+export {ForumDetails} from './ForumDetails';

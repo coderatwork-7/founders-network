@@ -1,0 +1,123 @@
+@import '@/styles/override';
+
+.inviteInvestorHeader {
+  padding: 10px 0;
+  background-color: $green;
+  color: $white;
+  font-size: $small;
+}
+
+.link {
+  color: $white;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  &:active,
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.headerCard {
+  max-width: 960px;
+  margin: 2rem auto;
+  overflow: hidden;
+  text-align: start;
+}
+
+.headerContent {
+  padding: 0 2rem;
+}
+
+.avatarContainer {
+  margin-top: -7.5rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.coverImage {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1000px rgba($black-ligther, 0.4);
+  position: relative;
+
+  // &::after {
+  //   z-index: 100;
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: black;
+  //   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  //   opacity: 0.7;
+  // }
+}
+
+.mainContainer {
+  height: 200px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba($black-ligther, 0.4);
+  color: $white;
+  padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .tabContainer {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tabs {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 50px;
+      font-size: $heading6;
+      text-transform: uppercase;
+      cursor: pointer;
+      .active {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
+.editProfile {
+  margin-top: -8px;
+}
+.link {
+  color: $white;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .tabContainer {
+    flex-direction: column;
+    gap: 20px;
+    .tabs {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .tabContainer {
+    gap: 15px;
+    flex-direction: column-reverse;
+    .tabs {
+      gap: 15px !important;
+      justify-content: space-evenly !important;
+      align-items: center;
+      font-size: $small !important;
+    }
+  }
+}
